@@ -15,6 +15,9 @@ $(function () {
     $(".search form a i").click(function () {
         $(".search").removeClass("active1");
     });
+    $(".search a .exit").click(function () {
+        $(".search").removeClass("active1");
+    });
 });
 
 //cuộn chuột hiện thanh nav menu top

@@ -41,9 +41,11 @@
     <body>
         <!-- nut search -->
         <div class="search">
+            <a href=""><i class="fa-solid fa-x mt-5 exit"></i></a>
+
             <form action="" class="d-flex">
                 <input type="text" placeholder="nhập từ khóa tìm kiếm" class="border-0" />
-                <a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-magnifying-glass"></i></a>
             </form>
         </div>
 
@@ -114,9 +116,7 @@
                                             <a class="nav-link" href="source_sub_details.html">Lớp Yoga - fitness </a>
                                         </li>
                                         <li class="nav-item nav-sub">
-                                            <a class="nav-link" href="source_sub_details.html"
-                                                >Lịch sự kiện sắp diễn ra</a
-                                            >
+                                            <a class="nav-link" href="source_sub_details.html">Lịch sự kiện sắp diễn ra</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -197,9 +197,7 @@
                                 <div class="row">
                                     <div class="col-3 col-lg-3">
                                         <!-- javascript:; ngăn load lại trang web -->
-                                        <a href="javascript:;" class="clickSreach"
-                                            ><i class="fa-solid fa-magnifying-glass"></i
-                                        ></a>
+                                        <a href="javascript:;" class="clickSreach"><i class="fa-solid fa-magnifying-glass"></i></a>
                                     </div>
                                     <div class="col-3 col-lg-3">
                                         <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -254,27 +252,17 @@
             <div class="headline mt-4 pb-4 text-black">
                 <div class="note-signin p-3">
                     Bạn có coupon?
-                    <a href="signin.html" data-bs-toggle="collapse" data-bs-target="#coupon">nhấn vào đây</a> để nhập mã
-                    của bạn.
+                    <a href="signin.html" data-bs-toggle="collapse" data-bs-target="#coupon">nhấn vào đây</a> để nhập mã của bạn.
                 </div>
             </div>
             <div id="coupon" class="container collapse border border-1 mb-4 pt-2 pb-2">
                 <label for="uname" class="form-label mb-2">Nếu bạn có coupon, xin nhập mã vào đây. </label>
                 <div class="row">
                     <div class="col-lg-6 pb-2">
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="fname"
-                            placeholder="Nhập tên"
-                            name="fname"
-                            required
-                        />
+                        <input type="text" class="form-control" id="fname" placeholder="Nhập tên" name="fname" required />
                     </div>
                     <div class="col-lg-6">
-                        <button type="button" class="btn btn-primary send" data-bs-toggle="modal">
-                            Áp dụng mã giảm giá
-                        </button>
+                        <button type="button" class="btn btn-primary send" data-bs-toggle="modal">Áp dụng mã giảm giá</button>
                     </div>
                 </div>
             </div>
@@ -287,26 +275,12 @@
                         <div class="row">
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Họ:*</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="lname"
-                                    placeholder="Nhập họ"
-                                    name="lname"
-                                    required
-                                />
+                                <input type="text" class="form-control" id="lname" placeholder="Nhập họ" name="lname" required />
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Tên:* </label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fname"
-                                    placeholder="Nhập tên"
-                                    name="fname"
-                                    required
-                                />
+                                <input type="text" class="form-control" id="fname" placeholder="Nhập tên" name="fname" required />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
@@ -359,13 +333,7 @@
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Địa chỉ nhận hàng:* </label>
-                                <input
-                                    type="text"
-                                    class="form-control h3"
-                                    id="hosuenum"
-                                    placeholder="Số nhà và  tên đường"
-                                    name="fname"
-                                />
+                                <input type="text" class="form-control h3" id="hosuenum" placeholder="Số nhà và  tên đường" name="fname" />
                                 <input
                                     type="text"
                                     class="form-control"
@@ -376,26 +344,13 @@
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Số điện thoại :</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="uname"
-                                    placeholder="Nhập username"
-                                    name="uname"
-                                    required
-                                />
+                                <input type="text" class="form-control" id="uname" placeholder="Nhập username" name="uname" required />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Email :</label>
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="uname"
-                                    placeholder="Nhập email"
-                                    name="uname"
-                                />
+                                <input type="email" class="form-control" id="uname" placeholder="Nhập email" name="uname" />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
@@ -437,9 +392,7 @@
                                         id="myCheck-otheraddress"
                                         name="remember"
                                     />
-                                    <label class="form-check-label h4" for="myCheck-otheraddress">
-                                        Gửi đến địa chỉ khác?</label
-                                    >
+                                    <label class="form-check-label h4" for="myCheck-otheraddress"> Gửi đến địa chỉ khác?</label>
                                     <!-- <div class="valid-feedback">Valid.</div> -->
                                     <!-- <div class="invalid-feedback">Chọn checkbox để hoàn thành</div> -->
                                 </div>
@@ -450,12 +403,7 @@
                             <label class="mb-2">Ghi chú đơn hàng (không bắt buộc)</label>
 
                             <div class="form-floating mb-3">
-                                <textarea
-                                    class="form-control"
-                                    id="comment"
-                                    name="text"
-                                    placeholder="Comment goes here"
-                                ></textarea>
+                                <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
                                 <label for="comment" class="text-black-50">Comments</label>
                             </div>
                         </div>
@@ -463,26 +411,12 @@
                         <div class="row row-4 collapse" id="other-address">
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Họ:*</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="lname"
-                                    placeholder="Nhập họ"
-                                    name="lname"
-                                    required
-                                />
+                                <input type="text" class="form-control" id="lname" placeholder="Nhập họ" name="lname" required />
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Tên:* </label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fname"
-                                    placeholder="Nhập tên"
-                                    name="fname"
-                                    required
-                                />
+                                <input type="text" class="form-control" id="fname" placeholder="Nhập tên" name="fname" required />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
@@ -535,13 +469,7 @@
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Địa chỉ nhận hàng:* </label>
-                                <input
-                                    type="text"
-                                    class="form-control h3"
-                                    id="hosuenum"
-                                    placeholder="Số nhà và  tên đường"
-                                    name="fname"
-                                />
+                                <input type="text" class="form-control h3" id="hosuenum" placeholder="Số nhà và  tên đường" name="fname" />
                                 <input
                                     type="text"
                                     class="form-control"
@@ -552,26 +480,13 @@
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Số điện thoại :</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="uname"
-                                    placeholder="Nhập username"
-                                    name="uname"
-                                    required
-                                />
+                                <input type="text" class="form-control" id="uname" placeholder="Nhập username" name="uname" required />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Email :</label>
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="uname"
-                                    placeholder="Nhập email"
-                                    name="uname"
-                                />
+                                <input type="email" class="form-control" id="uname" placeholder="Nhập email" name="uname" />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
                             </div>
@@ -608,17 +523,9 @@
                 <!-- table -->
                 <div class="container mt-3" id="accordion">
                     <div class="form-check">
-                        <input
-                            type="radio"
-                            class="form-check-input ms-2"
-                            id="radio1"
-                            name="optradio"
-                            value="option1"
-                            checked
-                        />
+                        <input type="radio" class="form-check-input ms-2" id="radio1" name="optradio" value="option1" checked />
                         <label class="form-check-label ms-2" for="radio1"
-                            >Thanh toán khi giao hàng. Vui lòng liên hệ với chúng tôi nếu bạn cần hỗ trợ hoặc muốn thu
-                            xếp thay thế.</label
+                            >Thanh toán khi giao hàng. Vui lòng liên hệ với chúng tôi nếu bạn cần hỗ trợ hoặc muốn thu xếp thay thế.</label
                         >
                     </div>
                     <div class="form-check">
@@ -645,17 +552,10 @@
                         <div><img src="img/icons/amex-2.png" alt="" /></div>
                         <div><img src="img/icons/master-card-1.png" alt="" /></div>
                     </div>
-                    <form
-                        action="/action_page.php"
-                        id="show-3"
-                        data-bs-parent="#accordion"
-                        class="container p-3 payment-method-box collapse"
-                    >
+                    <form action="/action_page.php" id="show-3" data-bs-parent="#accordion" class="container p-3 payment-method-box collapse">
                         <div class="row">
                             <div class="mb-3">
-                                <label for="uname" class="form-label"
-                                    >Trả tiền một cách an toàn bằng thẻ tín dụng của bạn.
-                                </label>
+                                <label for="uname" class="form-label">Trả tiền một cách an toàn bằng thẻ tín dụng của bạn. </label>
                             </div>
 
                             <div class="resp575">
@@ -709,14 +609,7 @@
                         </div> -->
 
                     <div class="mb-3 mt-3 col-12 text-end">
-                        <button
-                            type="button"
-                            class="btn btn-primary send"
-                            data-bs-toggle="modal"
-                            data-bs-target="#myModal"
-                        >
-                            Xác nhận
-                        </button>
+                        <button type="button" class="btn btn-primary send" data-bs-toggle="modal" data-bs-target="#myModal">Xác nhận</button>
 
                         <!--  -->
                         <!-- The Modal -->
@@ -736,14 +629,8 @@
                                     <div class="modal-body">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-lg-10 align-self-end text-end pe-5 h2">
-                                                    Bạn đã đăng ký thành công
-                                                </div>
-                                                <img
-                                                    src="img/icon 4 paddle.svg"
-                                                    alt=""
-                                                    class="col-lg-2 p-0 align-self-start"
-                                                />
+                                                <div class="col-lg-10 align-self-end text-end pe-5 h2">Bạn đã đăng ký thành công</div>
+                                                <img src="img/icon 4 paddle.svg" alt="" class="col-lg-2 p-0 align-self-start" />
                                             </div>
                                         </div>
                                     </div>
@@ -753,9 +640,7 @@
                                         <div class="">
                                             <a href="home.html" class="">
                                                 <!-- Quay về trang chủ -->
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                                                    Quay về trang chủ
-                                                </button>
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Quay về trang chủ</button>
                                             </a>
                                         </div>
                                     </div>
@@ -852,8 +737,7 @@
                         <div class="ft-list">
                             <h3 class="title mb-3 mt-xs-4">Nơi đăng ký nhận bản tin khuyến mãi</h3>
                             <p class="desc mb-2">
-                                Đăng ký bản tin của chúng tôi để được thông báo về những nơi nghỉ ngơi và lớp học yoga
-                                sắp tới của SUP.
+                                Đăng ký bản tin của chúng tôi để được thông báo về những nơi nghỉ ngơi và lớp học yoga sắp tới của SUP.
                             </p>
 
                             <form action="/action_page.php">
@@ -914,14 +798,9 @@
                     <div class="col-lg-8 text-center d-flex align-items-center info-des">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
-                                    Trang web của chúng tôi được lưu trữ trên dịch vụ lưu trữ có trách nhiệm với môi
-                                    trường
-                                </div>
+                                <div class="col-lg-12">Trang web của chúng tôi được lưu trữ trên dịch vụ lưu trữ có trách nhiệm với môi trường</div>
                                 <p></p>
-                                <div class="col-lg-12">
-                                    © 2022 <span>THT Store</span> bởi <span>ththong_desweb@gmail.com</span>
-                                </div>
+                                <div class="col-lg-12">© 2022 <span>THT Store</span> bởi <span>ththong_desweb@gmail.com</span></div>
                             </div>
                         </div>
                     </div>
