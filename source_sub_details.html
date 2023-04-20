@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>source_sub_details</title>
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Global css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- time picker -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+            integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-multidatespicker/1.6.6/jquery-ui.multidatespicker.min.css"
+            integrity="sha512-mIbgL1BBPonQ8vE6IE3m12DOgjnwObnVHk4C2k3S7yyrgd3ctznEDHnz4871ioTgh7QIy0imgyLeNFk+PehRSw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- local css -->
+        <!-- <link rel="stylesheet" href="css/home.css" /> -->
+        <link rel="stylesheet" href="css/news.css" />
+        <link rel="stylesheet" href="css/news_sub.css" />
+        <!-- <link rel="stylesheet" href="css/news_sub_details.css" /> -->
+
+        <link rel="stylesheet" href="css/store.css" />
+        <link rel="stylesheet" href="css/store_sub.css" />
+        <link rel="stylesheet" href="css/store_sub_details.css" />
+        <link rel="stylesheet" href="css/box-product.css" />
+        <link rel="stylesheet" href="css/source_sub_details.css" />
+    </head>
+    <body>
+        <!-- nut search -->
+        <div class="search">
+            <form action="" class="d-flex">
+                <input type="text" placeholder="nhập từ khóa tìm kiếm" class="border-0" />
+                <a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+        </div>
+
+        <!-- bar menu top -->
+        <div class="top-nav">
+            <div class="container-fluid">
+                <div class="top-brand">THT Store welcome</div>
+
+                <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                    <div class="container d-flex">
+                        <a class="navbar-brand" href="home.html"><img src="img/logo/icon-blue@1x.png" alt="" /></a>
+
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                <li class="top-icon-hidden hidden">
+                                    <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                                    <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="news.html">Tin tức</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Hoạt động - sự kiện</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Kỹ năng - kỹ thuật</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Sản phẩm mới</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Thời tiết, thủy triều</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item nav-fd">
+                                    <a class="nav-link nav-fd" href="store.html">Cửa hàng</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Ván chèo</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Kayak - thuyền</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Mái chèo</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Phụ kiện</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Khác</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="source_sub.html">Khóa học</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp chèo cơ bản</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp SUP trên sông</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp Yoga - fitness </a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lịch sự kiện sắp diễn ra</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="Rent.html">Cho thuê</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Sup bơm hơi</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Phụ kiện sup</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Cho thuê đồ cắm trại</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Đặt hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="Tour.html">Tour</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Khu vực tphcm</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Tour trong nước</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Tour thế giới</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Tour theo yêu cầu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="about.html">Khám phá</a>
+
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Bảo mật thông tin</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Thông tin tuyển dụng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="language hidden">
+                                    <a href="javascript:void(0)"><img src="img/icons/Vn.svg" alt="" /></a>
+                                    <a href="javascript:void(0)"><img src="img/icons/En.svg" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-icon m-1">
+                            <div class="container container-top">
+                                <div class="row">
+                                    <div class="col-3 col-md-3 col-lg-3"></div>
+                                    <div class="col-3 col-lg-3"></div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-bot">
+                                <div class="row">
+                                    <div class="col-3 col-lg-3">
+                                        <!-- javascript:; ngăn load lại trang web -->
+                                        <a href="javascript:;" class="clickSreach"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3">
+                                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="javascript:void(0)"><img src="img/icons/Vn.svg" alt="" /></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="javascript:void(0)"><img src="img/icons/En.svg" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- menu doc khi hover responsive-->
+            <div class="offcanvas offcanvas-end" id="demo">
+                <!-- <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Heading</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div> -->
+                <div class="offcanvas-body right-menu">
+                    <div class="top-icon-hidden">
+                        <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                        <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <a class="nav-link" href="news.html">Tin tức</a>
+                    <a class="nav-link" href="store.html">Cửa hàng</a>
+                    <a class="nav-link" href="source_sub.html">Khóa học</a>
+                    <a class="nav-link" href="Rent.html">Cho thuê</a>
+                    <a class="nav-link" href="Tour.html">Tour</a>
+                    <a class="nav-link" href="about.html">Khám phá</a>
+
+                    <div class="language">
+                        <a href=""><img src="img/icons/Vn.svg" alt="" /></a>
+                        <a href=""><img src="img/icons/En.svg" alt="" /></a>
+                    </div>
+                    <!-- <button class="btn btn-secondary" type="button">A Button</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!--  title cart -->
+        <div class="cart container">
+            <!-- content_main top -->
+            <div class="title-cart">
+                <div class="row top pb-4 pt-4 text-center">
+                    <h2 class="title-code mb-3 text-white"><strong>Khóa học ván chèo cơ bản</strong></h2>
+                    <div class="text-code">mã sp: 0945465</div>
+                </div>
+                <div class="row bottom pb-4 pt-4 me-0 ms-0 d-flex">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-8 text-black align-self-center">Khóa học ván chèo cơ bản” đã được thêm vào giỏ hàng của bạn.</div>
+                    <div class="col-lg-2 d-flex right">
+                        <button class="btn btn-primary ms-auto" type="button">Xem giỏ hàng</button>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+
+            <div class="p-product-1">
+                <div class="container p_box ps-0 pe-0">
+                    <div class="row d-flex">
+                        <div class="col-lg-6 p_left">
+                            <div class="p_thumb">
+                                <!-- <div class="heart">
+                                        <i class="fa-regular fa-heart stroke"></i>
+                                        <i class="fa-solid fa-heart full"></i>
+                                    </div> -->
+
+                                <img src="img/source/Rectangle 560s-p-01.png" alt="" />
+                            </div>
+
+                            <div class="p_img_link">
+                                <ul>
+                                    <li datasrc="img/source/Rectangle 560s-p-01.png">
+                                        <a href="javascript:;">
+                                            <img src="img/source/Rectangle 560s-p-01.png" alt="Rectangle 560" />
+                                        </a>
+                                    </li>
+
+                                    <li datasrc="img/source/Rectangle 561s-p-02.png">
+                                        <a href="javascript:;">
+                                            <img src="img/source/Rectangle 561s-p-02.png" alt="Rectangle 561vay" />
+                                        </a>
+                                    </li>
+
+                                    <li datasrc="img/source/Rectangle 565s-p-03.png">
+                                        <a href="javascript:;">
+                                            <img src="img/source/Rectangle 565s-p-03.png" alt="aquatone-sup-wave-10-6-(5).jpg" />
+                                        </a>
+                                    </li>
+
+                                    <li datasrc="img/source/Rectangle 566s-p-04.png">
+                                        <a href="javascript:;">
+                                            <img src="img/source/Rectangle 566s-p-04.png" alt="25.7_5" />
+                                        </a>
+                                    </li>
+
+                                    <li datasrc="img/source/Rectangle 567s-p-05.png">
+                                        <a href="javascript:;">
+                                            <img src="img/source/Rectangle 567s-p-05.png" alt="896_2" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 p_right">
+                            <div class="p_count">
+                                <div>trạng thái: <span>còn hàng</span></div>
+                            </div>
+                            <div class="p_size">
+                                <div class="p_price"><span>500.000 ₫</span></div>
+
+                                <div class="p_flex linegray-text">1.000.000 ₫</div>
+                            </div>
+                            <div class="p_size">
+                                <!-- <div class="p_flex">
+                                        <div class="name">Chọn màu để xem giá và chi nhánh có hàng</div>
+                                    </div> -->
+                                <!-- 5 star -->
+                                <div class="d-flex">
+                                    <div class="star pe-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star text-secondary"></i>
+                                    </div>
+                                    <div class="text-secondary text-black-50">15</div>
+                                </div>
+
+                                <div class="box-mdp">
+                                    <div id="mdp-demo" class="mdp-demo"></div>
+                                    <div class="container">
+                                        <div class="row starEnd-picker">
+                                            <!-- <div class="col-12 col-lg-6 pb-3 ps-0 pe-0">
+                                                <div class="pb-2">Số lượng người:</div>
+                                                <input type="number" value="1" min="1" max="25" name="đặt lịch học" class="book-num" />
+                                            </div> -->
+                                            <div class="col-12 col-lg-6 ps-0 pe-0 pe-lg-2 pb-3">
+                                                <div class="pb-2">Giờ học</div>
+                                                <select class="select-dropdown" id="datehourstart" name="sellist">
+                                                    <option>&nbsp;&nbsp;</option>
+
+                                                    <option>07:00</option>
+
+                                                    <option>09:00</option>
+
+                                                    <option>14:00</option>
+
+                                                    <option>16:00</option>
+                                                </select>
+                                            </div>
+                                            <div class="day-show col-12 col-lg-6 ps-0 pe-0 pb-3">
+                                                <div class="mb-2">Số lượng người:</div>
+                                                <input type="number" value="1" min="1" max="30" name="đặt lịch học" class="mb-3 p-2" />
+                                            </div>
+                                            <!-- <div>
+                                                từ:
+                                                <input id="mdp-demo1" placeholder="20/10/2023" />
+                                            </div> -->
+                                            <!-- &nbsp;&nbsp;&nbsp; -->
+                                            <!-- <div>đến: <input id="mdp-demo2" placeholder="30/10/2023" /></div> -->
+                                        </div>
+                                    </div>
+
+                                    <!-- <div>tổng số ngày: <span>10</span></div> -->
+                                </div>
+                            </div>
+
+                            <!-- button mua ngay va them vao gio hang -->
+                            <div class="p_flex d-flex mb-lg-3 mb-sm-2">
+                                <a href="cart.html" class="p_button">
+                                    <p>ĐẶT LỊCH</p>
+                                    <!-- <p>(Giao tận nơi hoặc lấy tại cửa hàng)</p> -->
+                                </a>
+
+                                <a href="javascript:;" class="p_button d-flex" id="addcart">
+                                    <div>Thêm vào giỏ</div>
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="p_count">
+                                <div>Danh mục: <span>Ván chèo , Ván chèo cứng , Biểu diễn , Siêu mạnh</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---->
+
+        <div class="container description-comment-listproducts">
+            <div class="row">
+                <!-- <h2>Toggleable Tabs</h2> -->
+                <div class="col-lg-8 mb-5 description-comment">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#description">MÔ TẢ SẢN PHẨM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#comment">ĐÁNH GIÁ</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="description" class="container tab-pane active">
+                            <br />
+                            <p>
+                                Học cách đứng chèo ván với chúng tôi trong mùa hè này! Khóa học giới thiệu kéo dài 2,5 giờ của chúng tôi dạy bạn các
+                                kỹ năng và kiến thức cơ bản để chèo thuyền an toàn trong vùng nước yên tĩnh có mái che. Các kỹ năng được đề cập bao
+                                gồm lắp, quỳ, đứng trên ván, vuốt về phía trước và xoay người, nhận thức về an toàn, khiêng và xếp ván, và hơn thế
+                                nữa!
+                            </p>
+                            <p>
+                                Những người chèo thuyền sẽ được cấp Chứng chỉ SUP Cơ bản của Paddle Canada, chứng chỉ này giúp bạn chuẩn bị cho các
+                                khóa học kỹ năng chèo ván đứng khác của chúng tôi, chẳng hạn như khóa học Kỹ năng SUP Flatwater Nâng cao của chúng
+                                tôi.
+                            </p>
+                            <p>Các khóa học giới thiệu diễn ra vào thứ Tư và thứ Năm hàng tuần suốt cả mùa hè!</p>
+                            <p><b>Điều kiện tiên quyết:</b> Không có</p>
+                            <p>
+                                <b>Độ tuổi / Yêu cầu về thể chất:</b>
+                                Người tham gia phải từ 12 tuổi trở lên và phải có tình trạng thể chất hợp lý
+                            </p>
+                            <p>
+                                <b>Khóa học bao gồm:</b>
+                            </p>
+                            <p>
+                                Đứng lên ván chèo, mái chèo, dây xích, PFD và huýt sáo trong suốt thời gian khóa học 2,5 giờ hướng dẫn từ các giảng
+                                viên Paddle Canada được chứng nhận và giàu kinh nghiệm
+                            </p>
+                            <p>Địa điểm khóa học:</p>
+                            <p>
+                                Các khóa học thứ Tư và thứ Năm được tổ chức tại Trung tâm chèo thuyền và chèo thuyền Kayak Manitoba 80 Churchill Drive
+                                Winnipeg, Manitoba ( mở trong Google Maps ) Khóa học chạy từ 6:00 tối đến 8:30 tối. Vui lòng đến sớm khoảng 15 phút để
+                                bạn được dỡ hàng, thay đồ và sẵn sàng bắt đầu vào giờ bắt đầu. Đến muộn sẽ cắt giảm thời gian giảng dạy của bạn và của
+                                những người khác trong khóa học.
+                            </p>
+                            <p>Khóa học này sẽ diễn ra với tối thiểu 2 học viên và tối đa 6 học viên cho mỗi giảng viên.</p>
+                            <p>
+                                Hủy khóa học: Hiếm khi chúng tôi hủy bỏ một buổi học vì lý do thời tiết, tuy nhiên, theo nhận định của chúng tôi,
+                                chúng tôi sẽ hủy bỏ một buổi học nếu điều kiện nguy hiểm hoặc có khả năng là môi trường học tập kém.
+                            </p>
+                        </div>
+                        <div id="comment" class="container tab-pane fade border-tab">
+                            <div class="row">
+                                <!-- 5 star -->
+                                <div class="row mt-4">
+                                    <div class="col-1 col-lg-0"></div>
+                                    <div class="col-2 col-lg-3 text-center">
+                                        <h2>4.8/5</h2>
+                                        <!-- 5 star -->
+                                        <div class="star pe-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-6">
+                                        <!-- 5 star -->
+                                        <div class="row progress-total d-flex">
+                                            <div class="col-lg-4 ps-0 pe-0 text-end">
+                                                <div class="star pe-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 d-flex">
+                                                <div class="col-lg-10 progress ms-0 me-0 ps-0 pe-0">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                                <div class="col-lg-2 text-secondary ps-2 text-black-50 align-self-center">10</div>
+                                            </div>
+                                        </div>
+                                        <!-- 4 star -->
+                                        <div class="row progress-total d-flex">
+                                            <div class="col-lg-4 ps-0 pe-0 text-end">
+                                                <div class="star pe-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 d-flex">
+                                                <div class="col-lg-10 progress ms-0 me-0 ps-0 pe-0">
+                                                    <div class="progress-bar vote-2"></div>
+                                                </div>
+                                                <div class="col-lg-2 text-secondary ps-2 text-black-50 align-self-center">5</div>
+                                            </div>
+                                        </div>
+                                        <!-- 3 star -->
+                                        <div class="row progress-total d-flex">
+                                            <div class="col-lg-4 ps-0 pe-0 text-end">
+                                                <div class="star pe-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 d-flex">
+                                                <div class="col-lg-10 progress ms-0 me-0 ps-0 pe-0">
+                                                    <div class="progress-bar vote-3"></div>
+                                                </div>
+                                                <div class="col-lg-2 text-secondary ps-2 text-black-50 align-self-center">0</div>
+                                            </div>
+                                        </div>
+                                        <!-- 2 star -->
+                                        <div class="row progress-total d-flex">
+                                            <div class="col-lg-4 ps-0 pe-0 text-end">
+                                                <div class="star pe-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 d-flex">
+                                                <div class="col-lg-10 progress ms-0 me-0 ps-0 pe-0">
+                                                    <div class="progress-bar vote-3"></div>
+                                                </div>
+                                                <div class="col-lg-2 text-secondary ps-2 text-black-50 align-self-center">0</div>
+                                            </div>
+                                        </div>
+                                        <!-- 1 star -->
+                                        <div class="row progress-total d-flex">
+                                            <div class="col-lg-4 ps-0 pe-0 text-end">
+                                                <div class="star pe-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                    <i class="fa-solid fa-star hidden"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 d-flex">
+                                                <div class="col-lg-10 progress ms-0 me-0 ps-0 pe-0">
+                                                    <div class="progress-bar vote-3"></div>
+                                                </div>
+                                                <div class="col-lg-2 text-secondary ps-2 text-black-50 align-self-center">0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-lg-3"></div>
+                                    <div class="col-1 col-lg-0"></div>
+                                </div>
+
+                                <div class="row mt-4 drop-arrange">
+                                    <div class="col-lg-9 d-flex flex-row-reverse left">
+                                        <button type="button" class="btn btn-primary dropdown-toggle lienquan" data-bs-toggle="dropdown">
+                                            Liên quan
+                                        </button>
+                                        <ul class="dropdown-menu drop-noboder">
+                                            <li><a class="dropdown-item" href="#">mới nhất</a></li>
+                                            <li><a class="dropdown-item" href="#">lâu nhất</a></li>
+                                        </ul>
+                                        <div class="align-self-center">Sắp xếp:</div>
+                                    </div>
+                                    <div class="col-lg-3 d-flex flex-row-reverse">
+                                        <button type="button" class="btn btn-primary dropdown-toggle lienquan" data-bs-toggle="dropdown">
+                                            Tất cả Sao
+                                        </button>
+                                        <ul class="dropdown-menu drop-noboder">
+                                            <li><a class="dropdown-item" href="#">5 sao</a></li>
+                                            <li><a class="dropdown-item" href="#">4 sao</a></li>
+                                            <li><a class="dropdown-item" href="#">3 sao</a></li>
+                                            <li><a class="dropdown-item" href="#">2 sao</a></li>
+                                            <li><a class="dropdown-item" href="#">1 sao</a></li>
+                                        </ul>
+                                        <div class="align-self-center">Lọc:</div>
+                                    </div>
+                                </div>
+
+                                <div class="container mt-4 user-comment">
+                                    <div class="row border-bottom mb-4">
+                                        <div class="col-1 avt"><img src="img/product/Ellipse 28.png" alt="" /></div>
+                                        <div class="col-11">
+                                            <p class="pb-2">sxxx_123</p>
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p class="pb-2 text-black-50">
+                                                2022-09-16 22:17 | Phân loại hàng: FunWater Inflatable SUP Ultra-Light Everything.
+                                            </p>
+                                            <p class="pb-4">Dùng tốt</p>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom mb-4">
+                                        <div class="col-1 avt"><img src="img/product/Ellipse 282.png" alt="" /></div>
+                                        <div class="col-11">
+                                            <p class="pb-2">phuc_3</p>
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p class="pb-2 text-black-50">
+                                                2022-09-16 22:17 | Phân loại hàng: FunWater Inflatable SUP Ultra-Light Everything.
+                                            </p>
+                                            <p class="pb-4">Đem về nhưng chưa có sài, chưa biết thế nào. Nhưng nhìn bên ngoài thì giống mô tả đó</p>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom mb-4">
+                                        <div class="col-1 avt"><img src="img/product/Ellipse 283.png" alt="" /></div>
+                                        <div class="col-11">
+                                            <p class="pb-2">sxxx_123</p>
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p class="pb-2 text-black-50">
+                                                2022-09-16 22:17 | Phân loại hàng: FunWater Inflatable SUP Ultra-Light Everything.
+                                            </p>
+                                            <p class="pb-4">Dạ cần bảo hành liên hệ trực tiếp eurolife ạ. Cảm ơn QK,</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-1 avt"><img src="img/product/Ellipse 284.png" alt="" /></div>
+                                        <div class="col-11">
+                                            <p class="pb-2">sxxx_123</p>
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p class="pb-2 text-black-50">
+                                                2022-09-16 22:17 | Phân loại hàng: FunWater Inflatable SUP Ultra-Light Everything.
+                                            </p>
+                                            <p class="pb-4">hy vọng bền đỡ phải thay nhiều lần. Tặng shop 5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3">
+                    <!-- list-news -->
+                    <div class="container ps-0 pe-0 list-news">
+                        <div class="row d-flex justify-content-between bottom">
+                            <!-- <button class="btnnn p-2 background-color bg-primary">click random</button> -->
+                            <div class="top-title">Tin liên quan</div>
+                            <div id="news-1" class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <!-- row 1 -->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5571.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"> <h5>LỰA CHỌN MÁI CHÈO SUP PHÙ HỢP</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5572.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"><h5>LÊNH ĐÊNH SUP NHẶT RÁC SÔNG SÀI GÒN</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5573.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">Lễ hội hoa tam giác mạch Hà Giang</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5574.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"><h5>HÒN SỤP SUP RACE</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- row 2 -->
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5575.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5>DANH SÁCH NHỮNG MÓN ĐỒ CẦN THIẾT CHO BUỔI CHÈO SUP</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5576.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>10 LỜI KHUYÊN KHÔNG NÊN BỎ QUA KHI CHÈO KAYAK</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5577.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">CÁCH "CHĂM SÓC" CHIẾC KAYAK CỦA BẠN SAU MỖI CHUYẾN ĐI</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5578.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"><h5>BỐ CỤC ẢNH: 7 MẸO ĐỂ CHỤP ẢNH ĐẸP HƠN</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="news-2" class="hid container">
+                                <div class="row">
+                                    <!-- row 3 -->
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5579.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"><h5>8 MẸO SẮP XẾP VALI DU LỊCH</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55710.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>TRÀO LƯU "SĂN MÂY KIỂU MỚI", NÊN HAY KHÔNG NÊN?</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55711.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">KINH NGHIỆM CẮM TRẠI MỘT MÌNH</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55712.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>MẸO LƯU TRỮ VÀ XỬ LÝ THỰC PHẨM KHI CẮM TRẠI</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- row 4 -->
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55713.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"> <h5>LÝ DO ĐỂ MUA TÚI NGỦ DÃ NGOẠI</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55714.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>10 lý do để bắt đầu trải nghiệm yoga trên mặt nước - SUP YOGA</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55715.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">Ván chèo đứng: Chọn bơm cho ván chèo đứng (SUP) bơm hơi</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55716.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>Hướng dẫn tập yoga trên mặt nước – SUP YOGA</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="news-3" class="hid container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5578.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"><h5>BỐ CỤC ẢNH: 7 MẸO ĐỂ CHỤP ẢNH ĐẸP HƠN</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5573.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">Lễ hội hoa tam giác mạch Hà Giang</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5574.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"><h5>HÒN SỤP SUP RACE</h5></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 5577.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">CÁCH "CHĂM SÓC" CHIẾC KAYAK CỦA BẠN SAU MỖI CHUYẾN ĐI</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55711.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">KINH NGHIỆM CẮM TRẠI MỘT MÌNH</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55712.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>MẸO LƯU TRỮ VÀ XỬ LÝ THỰC PHẨM KHI CẮM TRẠI</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55715.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6">
+                                                    <h5 class="text-uppercase">Ván chèo đứng: Chọn bơm cho ván chèo đứng (SUP) bơm hơi</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-12 thumbnail">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <a href="news_sub_details.html" class="img col-lg-6 pb-2"
+                                                    ><img src="img/news_sub/Rectangle 55716.png" alt=""
+                                                /></a>
+                                                <a href="news_sub_details.html" class="col-lg-6"
+                                                    ><h5>Hướng dẫn tập yoga trên mặt nước – SUP YOGA</h5></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab panes 6 product/rows & pagination -->
+        <div class="new-product">
+            <div class="container">
+                <div class="headline">
+                    <h3 class="title">Sản phẩm bán chạy tại THT Store</h3>
+                    <p class="desc">Nơi chuyên cung cấp các sản phẩm thiết bị chính hãng liên quan đến SUP</p>
+                </div>
+
+                <!-- Carousel -->
+                <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="prev-next">
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner fixed-box">
+                        <div class="carousel-item 1">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="home" class="container tab-pane active">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/1.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">FunWater Inflatable SUP Ultra-Light Everything.</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger"> 3,694,000 ₫</span>
+                                                        <span class="price-dis"> 4,694,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: All around</div>
+                                                    <div>Model: 2020</div>
+                                                    <div>Manufacturer: China</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/2.png" alt="" />
+                                                    <div class="sale">-50%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">6' Surfboard Surf Foamie Boards Surfing Beach Ocean Body ...</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger"> 2,049,000 ₫</span>
+                                                        <span class="price-dis"> 4,094,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">45</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: All around</div>
+                                                    <div>Model: 2020</div>
+                                                    <div>Manufacturer: China</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/3.png" alt="" />
+                                                    <div class="sale">-40%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">2020 Aqua Marina Hyper Paddleboards- Inflatable SUP w/ Paddle</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger"> 5,690,000 ₫</span>
+                                                        <span class="price-dis"> 7,694,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">100</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: All around</div>
+                                                    <div>Model: 2020</div>
+                                                    <div>Manufacturer: China</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/4.png" alt="" />
+                                                    <div class="sale">-30%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Túi Chống Nước Đựng Đồ Bơi & Đồ Đi Biển 5/10/15L/20L</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">125,000 ₫</span>
+                                                        <span class="price-dis">185,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">256</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: All around</div>
+                                                    <div>Model: 2020</div>
+                                                    <div>Manufacturer: China</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/5.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">
+                                                        FunWater Inflatable SUP Ultra-Light Giày đi biển – đi rừng chống thấm nước
+                                                    </h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger"> 380,000 ₫</span>
+                                                        <span class="price-dis"> 480,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">1413</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: All around</div>
+                                                    <div>Model: 2020</div>
+                                                    <div>Manufacturer: Malasysia</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/6.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="title-cat">Ván SUP Bơm Hơi Gladiator Design Touring 11'2</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger"> 14.900.000 ₫</span>
+                                                        <span class="price-dis"> 16.900.000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">100</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: All around</div>
+                                                    <div>Model: 2020</div>
+                                                    <div>Manufacturer: China</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item 2">
+                            <div class="tab-content">
+                                <div id="home" class="container tab-pane active">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/7.png" alt="" />
+                                                    <div class="sale">-50%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Ván SUP bơm hơi AZTRON METEOR LITE Race 12'6" ISUP AS-610WD</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">$ 56.00</span>
+                                                        <span class="price-dis">$ 69.00</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/8.png" alt="" />
+                                                    <div class="sale">-30%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">VÁN SUP BƠM HƠI AQUATONE WAVE PLUS 11'0" 2020</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">7,500,000 ₫</span>
+                                                        <span class="price-dis">9,500,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/9.png" alt="" />
+                                                    <div class="sale">-30%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">
+                                                        FunWater Inflatable Stand up paddle Board?Blue SUP Board with complete kit
+                                                    </h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">4,694,000 ₫</span>
+                                                        <span class="price-dis">6,694,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/10.png" alt="" />
+                                                    <div class="sale">-10%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Túi Chống Nước Đựng Đồ Bơi & Đồ Đi Biển 5/10/15L/20L</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">125,000 ₫</span>
+                                                        <span class="price-dis">155,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/11.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">
+                                                        FunWater Inflatable SUP Ultra-LightGiày đi biển – đi rừng chống thấm nước
+                                                    </h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">380,000 ₫</span>
+                                                        <span class="price-dis">480,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/12.png" alt="" />
+                                                    <div class="sale">-10%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Ván SUP bơm hơi Aquatone Flame 12'6" Touring TS-313D</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">11.300.000 ₫</span>
+                                                        <span class="price-dis">12.500.000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item 3 active">
+                            <div class="tab-content">
+                                <div id="home" class="container tab-pane active">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/13.png" alt="" />
+                                                    <div class="sale">-50%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Ván SUP bơm hơi AZTRON METEOR LITE Race 12'6" ISUP AS-610WD</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">14.090,000 ₫</span>
+                                                        <span class="price-dis">16.090,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/14.png" alt="" />
+                                                    <div class="sale">-10%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">VÁN SUP BƠM HƠI AQUATONE WAVE PLUS 11'0" 2020</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">7,500,000 ₫</span>
+                                                        <span class="price-dis">8,500,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/15.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">
+                                                        FunWater Inflatable Stand up paddle Board?Blue SUP Board with complete kit
+                                                    </h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">4,694,000 ₫</span>
+                                                        <span class="price-dis">6,694,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/16.png" alt="" />
+                                                    <div class="sale">-30%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Inflatable paddle board Anomy Mr Wonderful 10.6 | 2021</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">15,500,000 ₫</span>
+                                                        <span class="price-dis">18,500,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star text-secondary"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/17.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Rover Aero 12′6″ Bug Slinger™ Silver King Inflatable Micro Skiff</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">24,380,000 ₫</span>
+                                                        <span class="price-dis">28,380,000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                                            <a class="card-product rounded-2 text-decoration-none" href="store_sub_details.html">
+                                                <div class="thumb">
+                                                    <img src="img/product/18.png" alt="" />
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                                <div class="content">
+                                                    <!-- <p class="catalog">Fresh vegetable</p> -->
+                                                    <h3 class="title-cat">Thuyền bơm hơi 4 người Aqua Marina Advanced Classic BT-88890 - 5532</h3>
+
+                                                    <div class="price">
+                                                        <span class="text-danger">7.890.000 ₫</span>
+                                                        <span class="price-dis">8.890.000 ₫</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="star pe-2">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="text-secondary text-black-50">10</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <button type="button" class="btn btn-primary w-100 rounded-pill">thêm vào giỏ</button>
+                                                    <div>Type: Organic</div>
+                                                    <div>MFG: August 4.2021</div>
+                                                    <div>LIFE: 60 days</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-details">
+                        <a href="store.html">
+                            <button class="btn btn-primary pt-2" type="button">Tham gia cùng chúng tôi<i class="fa-solid fa-angle-right"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- quality -->
+        <div class="quality">
+            <div class="container">
+                <div class="row">
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-6"><img src="img/icons/100_.svg" alt="" /></div>
+                        <!-- <h2>100%</h2> -->
+                        <h4 class="col-lg-6 align-self-center">Cam kết chính hãng</h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-6"><img src="img/icons/delivery.svg" alt="" /></div>
+                        <h4 class="col-lg-6 align-self-center">Giao hàng toàn quốc</h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-4 img4"><img src="img/icons/pakage.svg" alt="" /></div>
+                        <h4 class="col-md-3 col-lg-8 align-self-center">
+                            Đổi trả<br />
+                            trong 7 ngày
+                        </h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-4 img4"><img src="img/icons/money.svg" alt="" /></div>
+                        <h4 class="col-lg-8 align-self-center">
+                            Giá tốt <br />
+                            nhất cho bạn
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer mt-5 pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Về THT Store</h3>
+                            <ul class="info">
+                                <li><a href="">Điều khoản và điều kiện </a></li>
+                                <li><a href="">Bảo mật thông tin </a></li>
+                                <li><a href="">Chính sách ưu đãi</a></li>
+                                <li class="mb-4"><a href="">Thông tin tuyển dụng </a></li>
+                                <li>
+                                    <a href=""><img src="img/icons/dmca.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Hỗ trợ khách hàng</h3>
+                            <ul class="info">
+                                <li><a href="">Đặt hàng</a></li>
+                                <li><a href="">Đổi và trả hàng </a></li>
+                                <li><a href="">Chính sách giao và nhận</a></li>
+                                <li class=""><a href="">Chính sách thanh toán</a></li>
+                                <li><a href="">Chính sách bảo hành</a></li>
+                                <li><a href="">Gia công hàng hóa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Góc tư vấn</h3>
+                            <ul class="info">
+                                <li><a href="">Liên kết với THTStore</a></li>
+                                <li><a href="">Q &amp; A </a></li>
+                                <li><a href="">Khám phá điểm du lịch</a></li>
+                                <li><a href="">Khám phá khóa học</a></li>
+                                <li><a href="">Khám phá kỹ năng</a></li>
+                                <li class="mb-4 jus-img">
+                                    <a href=""><img src="img/icons/visa.png" alt="" /></a>
+                                    <a href="">
+                                        <img src="img/icons/amex-2.png" alt="" />
+                                    </a>
+                                    <a href=""> <img src="img/icons/master-card-1.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-3 mt-xs-4">Nơi đăng ký nhận bản tin khuyến mãi</h3>
+                            <p class="desc mb-2">
+                                Đăng ký bản tin của chúng tôi để được thông báo về những nơi nghỉ ngơi và lớp học yoga sắp tới của SUP.
+                            </p>
+
+                            <form action="/action_page.php">
+                                <div class="mb-3 mt-3 resp575">
+                                    <label class="pb-2" for="lastname">Họ: </label>
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                        id="lname"
+                                        placeholder="nhập họ"
+                                        name="lname"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="firstname">Tên:</label>
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                        id="fname"
+                                        placeholder="nhập tên"
+                                        name="fname"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email">Email:</label>
+                                    <div class="d-flex">
+                                        <input
+                                            type="email"
+                                            class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                            id="email"
+                                            placeholder="nhập email"
+                                            name="email"
+                                        />
+
+                                        <button type="submit" class="btn border-bottom border-white rounded-0">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-4">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember" /> Lưu thông tin
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 img p-2">
+                        <a href=""><img src="img/logo/icon-blue@1.5x.png" alt="" /></a>
+                    </div>
+                    <div class="col-lg-8 text-center d-flex align-items-center info-des">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">Trang web của chúng tôi được lưu trữ trên dịch vụ lưu trữ có trách nhiệm với môi trường</div>
+                                <p></p>
+                                <div class="col-lg-12">© 2022 <span>THT Store</span> bởi <span>ththong_desweb@gmail.com</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-flex jus align-items-center justify-content-end img p-2">
+                        <a href="java"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- button roll top -->
+        <div class="backtop" onclick="scrolltop() ">
+            <!-- <i class="fa-solid fa-arrow-up-long"></i> -->
+            <img src="img/icons/icon scroll back top.png" alt="scroll-back" />
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+            integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- jquery -->
+
+        <script src="js/style.js"></script>
+        <script src="js/news.js"></script>
+        <script src="js/style-products.js"></script>
+
+        <!-- date picker -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-multidatespicker/1.6.6/jquery-ui.multidatespicker.js"
+            integrity="sha512-shDVoXhqpazAEKzSzJQTn5mAtynJ5eIl8pNX2Ah25/GZvZWDEJ/EKiVwfu7DGo8HnIwxlbu4xPi+C0SsHWCCNw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="js/datetime_picker.js"></script>
+
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

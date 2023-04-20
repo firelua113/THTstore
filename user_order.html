@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User's infomation</title>
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Global css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- local css -->
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/news.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/user_info.css" />
+        <link rel="stylesheet" href="css/user_order.css" />
+
+        <!-- <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/home_2.css" />
+        <link rel="stylesheet" href="css/store.css" />
+        <link rel="stylesheet" href="css/tour.css" />
+        <link rel="stylesheet" href="css/rent.css" /> -->
+    </head>
+    <body>
+        <!-- voucher -->
+        <!-- <div class="vourcher">
+            <div class="img"><img src="img/voucher--2 1.png" alt="voucher" /></div>
+            <i class="fa-solid fa-x"></i>
+        </div> -->
+
+        <!-- nut search -->
+        <div class="search">
+            <form action="" class="d-flex">
+                <input type="text" placeholder="nhập từ khóa tìm kiếm" class="border-0" />
+                <a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+        </div>
+
+        <!-- bar menu top -->
+        <div class="top-nav">
+            <div class="container-fluid">
+                <div class="top-brand">THT Store welcome</div>
+
+                <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                    <div class="container d-flex">
+                        <a class="navbar-brand" href="home.html"><img src="img/logo/icon-blue@1x.png" alt="" /></a>
+
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                <li class="top-icon-hidden hidden">
+                                    <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                                    <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="news.html">Tin tức</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Hoạt động - sự kiện</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Kỹ năng - kỹ thuật</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Sản phẩm mới</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Thời tiết, thủy triều</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item nav-fd">
+                                    <a class="nav-link nav-fd" href="store.html">Cửa hàng</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Ván chèo</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Kayak - thuyền</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Mái chèo</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Phụ kiện</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Khác</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="source_sub.html">Khóa học</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp chèo cơ bản</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp SUP trên sông</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp Yoga - fitness </a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lịch sự kiện sắp diễn ra</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="Rent.html">Cho thuê</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Sup bơm hơi</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Phụ kiện sup</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Cho thuê đồ cắm trại</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Đặt hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="Tour.html">Tour</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Khu vực tphcm</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Tour trong nước</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Tour thế giới</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour_sub_details.html">Tour theo yêu cầu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="about.html">Khám phá</a>
+
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Bảo mật thông tin</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Thông tin tuyển dụng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="language hidden">
+                                    <a href=""><img src="img/icons/Vn.svg" alt="" /></a>
+                                    <a href=""><img src="img/icons/En.svg" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-icon m-1">
+                            <div class="container container-top">
+                                <div class="row">
+                                    <div class="col-3 col-md-3 col-lg-3"></div>
+                                    <div class="col-3 col-lg-3"></div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="signup.html"><i class="fa-solid fa-user"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-bot">
+                                <div class="row">
+                                    <div class="col-3 col-lg-3">
+                                        <!-- javascript:; ngăn load lại trang web -->
+                                        <a href="javascript:;" class="clickSreach"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3">
+                                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="javascript:void(0)"><img src="img/icons/Vn.svg" alt="" /></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="javascript:void(0)"><img src="img/icons/En.svg" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- menu doc khi hover responsive-->
+            <div class="offcanvas offcanvas-end" id="demo">
+                <!-- <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Heading</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div> -->
+                <div class="offcanvas-body right-menu">
+                    <div class="top-icon-hidden">
+                        <a href=""><i class="fa-solid fa-arrow-left-long"></i></a>
+                        <a href=""><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <a class="nav-link" href="news.html">Tin tức</a>
+                    <a class="nav-link" href="store.html">Cửa hàng</a>
+                    <a class="nav-link" href="source_sub.html">Khóa học</a>
+                    <a class="nav-link" href="Rent.html">Cho thuê</a>
+                    <a class="nav-link" href="Tour.html">Tour</a>
+                    <a class="nav-link" href="about.html">Khám phá</a>
+
+                    <div class="language">
+                        <a href=""><img src="img/icons/Vn.svg" alt="" /></a>
+                        <a href=""><img src="img/icons/En.svg" alt="" /></a>
+                    </div>
+                    <!-- <button class="btn btn-secondary" type="button">A Button</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- body account -->
+        <div class="container content-body">
+            <div class="row">
+                <div class="col-lg-3 avt-left">
+                    <div class="d-flex mb-4 mt-4 pb-4 avt-left-top">
+                        <div><img src="img/avt.png" alt="" /></div>
+                        <div class="align-self-center ms-3">
+                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal">Hình đại diện</a>
+                        </div>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog modal modal-fullscreen-lg-down modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <div></div>
+                                    <!-- <h4 class="modal-title"><img src="img/icon 4 paddle.svg" alt="" /></h4>-->
+                                    <button type="submit" class="btn" data-bs-dismiss="modal">
+                                        <i class="fa-solid fa-x"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <img src="img/avt.png" alt="" class="col-12 p-0" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer d-flex justify-content-center pb-sm-4 pb-lg=5">
+                                    <a href="user_info.html" class="">
+                                        <!-- Quay về trang chủ -->
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cập nhật ảnh đại diện</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-lg-12 tab-left">
+                            <a href="user_info.html" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#acc" class="title"
+                                ><i class="fa-solid fa-user pe-2 mb-3"></i>Tài Khoản Cá Nhân</a
+                            >
+                            <a href="user_info.html" class="title onoff"><i class="fa-solid fa-user pe-2 mb-3"></i>Tài Khoản Cá Nhân</a>
+                            <div id="acc" class="collapse show tab-left-sub">
+                                <ul class="ps-4">
+                                    <li class="mb-1 text-black"><a href="javascript:;">Hồ Sơ</a></li>
+                                    <li class="mb-1 text-black"><a href="javascript:;">Ngân Hàng</a></li>
+                                    <li class="mb-1 text-black"><a href="javascript:;">Địa Chỉ</a></li>
+                                    <li class="mb-1 text-black"><a href="javascript:;">Đổi mật khẩu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-12 tab-right">
+                            <a href="javaccript:void(0)" class="title"><i class="fa-regular fa-file-lines pe-2 mb-3"></i>Đơn Hàng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-3 ps-sm-5 col-lg-9 info-right">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills nav-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#home">Tất cả</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#menu1">Đang giao</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#menu2">Đã giao</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#menu3">Đã hủy</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active mt-4">
+                            <div class="row head-text">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-3">Sản phẩm</div>
+                                <div class="col-lg-3">Số lượng</div>
+                                <div class="col-lg-3">Tổng</div>
+                            </div>
+                            <div class="row body-text">
+                                <!-- <div class="col-12 icon onoff" type="delete">
+                                    <i class="fa-solid fa-x"></i>
+                                </div> -->
+                                <div class="col-4 col-lg-3 pt-2 img">
+                                    <img src="img/order.png" alt="" />
+                                </div>
+                                <div class="col-8 col-lg-3 align-self-center pt-2 pb-2">FunWater Inflatable SUP Ultra-Light Everything.</div>
+                                <div class="col-lg-3 row align-self-center num-count pb-2 pt-2">
+                                    <div class="col-4 onoff">Số lượng</div>
+                                    <div class="col-8 text-center"><span>1</span></div>
+                                </div>
+                                <div class="col-lg-3 row align-self-center pb-2 pt-3">
+                                    <div class="col-4 onoff">Tổng</div>
+                                    <div class="col-8 align-self-center">3.694.000 ₫</div>
+                                </div>
+                            </div>
+                            <div class="row total mb-4 mb-lg-4 mt-lg-4">
+                                <div class="col-lg-5"></div>
+                                <div class="col-4 col-lg-3">Tổng tiền:</div>
+                                <div class="col-8 col-lg-3 ps-0 pe-0 pt-2 pb-2">3.694.000 ₫</div>
+                                <div class="col-lg-1"></div>
+                            </div>
+                            <div class="row body-text-btn mt-1 btn-confirm">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6 m-0 p-0 row">
+                                    <button class="col-12 col-lg-4 btn me-lg-3 mb-3">Mua Lại</button>
+                                    <button class="col-12 col-lg-6 btn d-flex justify-content-center align-self-center mb-3">Chi Tiết Đơn Hủy</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade">
+                            <br />
+                            <p class="col-12 d-flex justify-content-center">Đang cập nhật</p>
+
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade row">
+                            <br />
+                            <p class="col-12 d-flex justify-content-center">Đang cập nhật</p>
+
+                            <div class="progress col-12">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div id="menu3" class="container tab-pane fade">
+                            <br />
+                            <div class="row head-text">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-3">Sản phẩm</div>
+                                <div class="col-lg-3">Số lượng</div>
+                                <div class="col-lg-3">Tổng</div>
+                            </div>
+                            <div class="row body-text">
+                                <div class="col-4 col-lg-3 pt-2 img">
+                                    <img src="img/order.png" alt="" />
+                                </div>
+                                <div class="col-8 col-lg-3 align-self-center pt-2 pb-2">FunWater Inflatable SUP Ultra-Light Everything.</div>
+                                <div class="col-lg-3 row align-self-center num-count pb-2 pt-2">
+                                    <div class="col-4 onoff">Số lượng</div>
+                                    <div class="col-8 text-center"><span>1</span></div>
+                                </div>
+                                <div class="col-lg-3 row align-self-center pb-2 pt-3">
+                                    <div class="col-4 onoff">Tổng</div>
+                                    <div class="col-8 align-self-center">3.694.000 ₫</div>
+                                </div>
+                            </div>
+                            <div class="row total mb-4 mb-lg-4 mt-lg-4">
+                                <div class="col-lg-5"></div>
+                                <div class="col-4 col-lg-3">Tổng tiền:</div>
+                                <div class="col-8 col-lg-3 ps-0 pe-0 pt-2 pb-2">3.694.000 ₫</div>
+                                <div class="col-lg-1"></div>
+                            </div>
+                            <div class="row body-text-btn mt-1 btn-confirm">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6 m-0 p-0 row">
+                                    <button class="col-12 col-lg-4 btn me-lg-3 mb-3">Mua Lại</button>
+                                    <button class="col-12 col-lg-6 btn d-flex justify-content-center align-self-center mb-3">Chi Tiết Đơn Hủy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- quality -->
+        <div class="quality">
+            <div class="container">
+                <div class="row">
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-6"><img src="img/icons/100_.svg" alt="" /></div>
+                        <!-- <h2>100%</h2> -->
+                        <h4 class="col-lg-6 align-self-center">Cam kết chính hãng</h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-6"><img src="img/icons/delivery.svg" alt="" /></div>
+                        <h4 class="col-lg-6 align-self-center">Giao hàng toàn quốc</h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-4 img4"><img src="img/icons/pakage.svg" alt="" /></div>
+                        <h4 class="col-md-3 col-lg-8 align-self-center">
+                            Đổi trả<br />
+                            trong 7 ngày
+                        </h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-4 img4"><img src="img/icons/money.svg" alt="" /></div>
+                        <h4 class="col-lg-8 align-self-center">
+                            Giá tốt <br />
+                            nhất cho bạn
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer mt-5 pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Về THT Store</h3>
+                            <ul class="info">
+                                <li><a href="error.html">Điều khoản và điều kiện </a></li>
+                                <li><a href="error.html">Bảo mật thông tin </a></li>
+                                <li><a href="error.html">Chính sách ưu đãi</a></li>
+                                <li class="mb-4"><a href="error.html">Thông tin tuyển dụng </a></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="img/icons/dmca.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Hỗ trợ khách hàng</h3>
+                            <ul class="info">
+                                <li><a href="contact.html">Đặt hàng</a></li>
+                                <li><a href="contact.html">Đổi và trả hàng </a></li>
+                                <li><a href="contact.html">Chính sách giao và nhận</a></li>
+                                <li class=""><a href="contact.html">Chính sách thanh toán</a></li>
+                                <li><a href="contact.html">Chính sách bảo hành</a></li>
+                                <li><a href="contact.html">Gia công hàng hóa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Góc tư vấn</h3>
+                            <ul class="info">
+                                <li><a href="contact.html">Liên kết với THTStore</a></li>
+                                <li><a href="contact.html">Q &amp; A </a></li>
+                                <li><a href="contact.html">Khám phá điểm du lịch</a></li>
+                                <li><a href="contact.html">Khám phá khóa học</a></li>
+                                <li><a href="contact.html">Khám phá kỹ năng</a></li>
+                                <li class="mb-4 jus-img">
+                                    <a href="javascript:void(0)"><img src="img/icons/visa.png" alt="" /></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="img/icons/amex-2.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)"> <img src="img/icons/master-card-1.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-3 mt-xs-4">Nơi đăng ký nhận bản tin khuyến mãi</h3>
+                            <p class="desc mb-2">
+                                Đăng ký bản tin của chúng tôi để được thông báo về những nơi nghỉ ngơi và lớp học yoga sắp tới của SUP.
+                            </p>
+
+                            <form action="error.html">
+                                <div class="mb-3 mt-3 resp575">
+                                    <label class="pb-2" for="lastname">Họ: </label>
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                        id="lname"
+                                        placeholder="nhập họ"
+                                        name="lname"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="firstname">Tên:</label>
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                        id="fname"
+                                        placeholder="nhập tên"
+                                        name="fname"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email">Email:</label>
+                                    <div class="d-flex">
+                                        <input
+                                            type="email"
+                                            class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                            id="email"
+                                            placeholder="nhập email"
+                                            name="email"
+                                        />
+
+                                        <button type="submit" class="btn border-bottom border-white rounded-0">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-4">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember" /> Lưu thông tin
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 img p-2">
+                        <a href="javascript:void(0)"><img src="img/logo/icon-blue@1.5x.png" alt="" /></a>
+                    </div>
+                    <div class="col-lg-8 text-center d-flex align-items-center info-des">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">Trang web của chúng tôi được lưu trữ trên dịch vụ lưu trữ có trách nhiệm với môi trường</div>
+                                <p></p>
+                                <div class="col-lg-12">© 2022 <span>THT Store</span> bởi <span>ththong_desweb@gmail.com</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-flex jus align-items-center justify-content-end img p-2">
+                        <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- button roll top -->
+        <div class="backtop" onclick="scrolltop() ">
+            <!-- <i class="fa-solid fa-arrow-up-long"></i> -->
+            <img src="img/icons/icon scroll back top.png" alt="scroll-back" />
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <!-- jquery -->
+        <script src="js/style.js"></script>
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

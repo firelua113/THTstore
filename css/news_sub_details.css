@@ -1,0 +1,129 @@
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+img {
+    width: 100%;
+}
+.top-nav-sub {
+    margin-bottom: 60px !important;
+}
+ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+.content-details {
+    margin-bottom: 80px;
+    color: #000000cc;
+}
+.content-details .date {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.content-details h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.content-details .row img {
+    width: 100% !important;
+    height: auto;
+    /* margin-bottom: 20px; */
+}
+.content-right .top-title {
+    background-color: black;
+    color: white;
+    padding: 12px !important;
+    margin-bottom: 40px;
+}
+.content-right .list-news .bottom div {
+    padding: 0;
+}
+.tip-text {
+    margin-bottom: 40px !important;
+}
+.tip-text a {
+    color: var(--primary-color) !important;
+}
+.hot-keys {
+    margin-bottom: 28px !important;
+}
+.hot-keys a {
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    margin-right: 20px;
+    font-weight: 700;
+}
+.btn-social {
+    width: 100%;
+    margin-bottom: 28px !important;
+}
+.btn-social button,
+.contact {
+    background-color: var(--primary-color);
+    padding: 4px 20px;
+    margin-right: 20px;
+    color: white;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+.btn-social button:hover,
+.contact:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+}
+.btn-social button i {
+    margin-left: 8px;
+}
+.list-news #news-1,
+.list-news #news-2,
+.list-news #news-3 {
+    display: none;
+}
+/* .list-news .hid {
+    display: none;
+} */
+.list-news .active {
+    display: block !important;
+}
+@media (max-width: 991px) {
+    .content-details {
+        margin-bottom: 0px;
+    }
+    .top-nav .navbar {
+        margin-bottom: 40px;
+    }
+    .content-details .content-left {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .content-details .content-left .contact {
+        margin-right: 0;
+    }
+    .btn-social {
+        width: 100%;
+        margin-bottom: 16px !important;
+    }
+    .list-news .bottom .thumbnail {
+        padding: 12px;
+        margin-bottom: 4px !important;
+    }
+
+    .list-news .bottom .row {
+        margin-bottom: 0 !important;
+    }
+
+    .top-title {
+        margin-bottom: 20px;
+    }
+    .carousel-indicators [data-bs-target] {
+        display: none;
+    }
+}
+@media (nax-width: 5765x) {
+    .content-right .list-news .bottom div {
+        padding: 0;
+    }
+}

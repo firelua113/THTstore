@@ -1,0 +1,158 @@
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+}
+img {
+    width: 100;
+}
+.row a {
+    color: black !important;
+}
+.content-body .img {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.content-body img {
+    width: auto;
+}
+.content-body .num-count {
+    margin-top: 12px;
+}
+/* .content-body .num-count span {
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+} */
+
+/* .content-body .num-count .signal {
+    border: none;
+    background-color: gray;
+} */
+
+input {
+    border-radius: 0px !important;
+    padding: 12px 20px !important;
+}
+button {
+    display: inline-block;
+    border-radius: 0px !important;
+    color: #fff !important;
+    padding: 12px 20px !important;
+    background-color: var(--primary-color) !important;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+.headline {
+    font-weight: 800;
+}
+
+.select-dropdown {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #a5a5a5;
+}
+a {
+    color: var(--primary-color) !important;
+}
+.full-width {
+    width: 100%;
+}
+
+.box-math .subbox {
+    display: flex;
+    align-items: center;
+}
+.box-math .subbox .quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.93);
+}
+.box-math .subbox .quantity input {
+    padding: 4px 8px;
+    width: 80px;
+    margin: 0 8px;
+    text-align: center;
+    border: none;
+}
+.box-math .subbox .quantity .math {
+    padding: 4px 8px;
+    border: none;
+    color: rgba(0, 0, 0, 0.93);
+    cursor: pointer;
+    /* background-color: rgb(243, 243, 243); */
+}
+.box-math .signal {
+    border-radius: 1px;
+}
+form.collapse-ship {
+    display: none;
+}
+#collapse-ship {
+    color: #0b6eaa;
+}
+.onoff {
+    display: none;
+}
+.border-top .onoff {
+    display: block !important;
+}
+@media (max-width: 991px) {
+    .content-body {
+        padding: 20px;
+    }
+    .content-body .title {
+        display: none;
+    }
+    .content-body .icon {
+        justify-content: left;
+        padding-left: 20px !important;
+    }
+    .box-math {
+        border: 2px solid rgba(0, 0, 0, 0.15);
+    }
+    .box-math .icon {
+        text-align: left !important;
+    }
+    .box-math .img:first-child {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+        padding: 12px 0;
+    }
+    .box-math .img:nth-child(2) {
+        padding: 12px 0;
+    }
+    .onoff {
+        display: block;
+    }
+    .box-math .subbox {
+        display: flex;
+        justify-content: center;
+    }
+    .btn-codesale div {
+        padding: 0 0 20px 0;
+    }
+    .btn-codesale button {
+        width: 100%;
+        padding: 0;
+    }
+    form.collapse-ship {
+        display: block;
+    }
+    .border-top .onoff {
+        display: none !important;
+    }
+    .select-city button {
+        width: 100%;
+    }
+}

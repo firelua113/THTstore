@@ -1,0 +1,381 @@
+img {
+    width: 100%;
+    display: block !important;
+}
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: #000000cc;
+}
+
+.top-nav-sub {
+    border-bottom: 1px solid #e6eaf0;
+}
+.top-nav-sub .nav-item i {
+    color: var(--primary-color);
+}
+.top-nav-sub .nav-item .nav-link {
+    margin-left: 0px;
+}
+.top-nav-sub .nav-item .nav-link.disabled {
+    color: #000000cc;
+}
+.top-nav-sub .nav-item:hover .nav-link.disabled {
+    color: #000000cc;
+}
+
+.breadcrumb .breadcrumb-item {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+.breadcrumb .breadcrumb-item.active {
+    color: #000000cc;
+}
+.top-nav-sub .nav-item:hover .nav-link {
+    color: var(--secondary-color);
+}
+.nav-sub-news h2 {
+    font-size: 3.6rem;
+    /* font-size: 60px; */
+    font-weight: 900;
+    /* line-height: 3.6rem; */
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+.nav-sub-news .nav-pills {
+    border-top: 2px solid #000000cc;
+}
+.nav-sub-news .nav-pills .nav-link {
+    color: #000000cc;
+}
+.nav-sub-news .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--primary-color);
+    background-color: white;
+}
+.nav-sub-news .nav-item:hover .nav-link {
+    color: var(--primary-color);
+}
+.nav-sub-news .nav-item .nav-link {
+    margin: 12px;
+    text-transform: uppercase;
+    color: #000000cc;
+    background: none;
+}
+.nav-sub-news .tab-content .top {
+    border-bottom: 1px solid #e6eaf0;
+}
+.nav-sub-news .tab-content .card-left {
+    padding-left: 0;
+    padding-right: 40px;
+    border-right: 1px solid #e6eaf0;
+}
+.nav-sub-news .tab-content .card-right {
+    padding-left: 40px;
+}
+
+.nav-sub-news .tab-content a img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.nav-sub-news .tab-content .card-left a img {
+    margin-bottom: 32px;
+}
+.nav-sub-news .tab-content h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.nav-sub-news .tab-content p {
+    margin-bottom: 40px;
+}
+.nav-sub-news .tab-content .card-right div {
+    margin-bottom: 56px;
+}
+.nav-sub-news .tab-content .card-left div:hover a h4,
+.nav-sub-news .tab-content .card-right div:hover a h5,
+.nav-sub-news .tab-content .bottom div:hover a h5 {
+    color: var(--primary-color);
+}
+.nav-sub-news .tab-content h5,
+.review-products h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.nav-sub-news .tab-content .bottom {
+    margin: 40px 0;
+}
+.nav-sub-news .tab-content .bottom div {
+    margin-bottom: 20px;
+}
+/* 2 bang tin */
+/* .news {
+    margin-bottom: 64px;
+} */
+.headline {
+    position: relative;
+}
+.headline .icon-paddle {
+    position: absolute;
+    left: 45%;
+    transform: rotate(-45deg);
+    top: 0%;
+    height: 80px;
+    animation: rotatePaddle 1.5s linear 2s infinite alternate;
+}
+@keyframes rotatePaddle {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
+
+.thumbnail .card {
+    overflow: hidden;
+    position: relative;
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 12px !important;
+}
+
+.thumbnail .card:hover .thumb-news-img {
+    transform: scale(1.2);
+}
+
+.thumbnail .card .thumb-news-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: hsla(203, 88%, 35%, 0.2);
+    color: #0b6eaa;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 100;
+}
+.card:hover .thumb-news-img::before {
+    opacity: 1;
+}
+.thumb-news-img {
+    width: 100%;
+    display: block !important;
+}
+.thumbnail h5 {
+    line-height: 1.8rem;
+}
+
+.thumbnail:hover h5 {
+    color: var(--primary-color);
+}
+
+/* .thumb-news::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(0 0 0 / 30%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 5;
+} */
+
+.thumb-news {
+    overflow: hidden;
+    position: relative;
+}
+.thumb-news-img {
+    transition: 0.5s;
+}
+.news img {
+    width: 100%;
+    height: 100%;
+    display: block !important;
+}
+
+.thumb-news img:hover {
+    transform: scale(1.2);
+}
+.news img:hover .thumb-news::before {
+    opacity: 1;
+}
+.news .card {
+    border: none;
+}
+.news .card:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.news .content {
+    padding: 20px 20px 40px 20px;
+}
+.news .col-lg-6 i {
+    color: red;
+    margin-right: 12px;
+}
+.news .text-danger {
+    font-weight: bolder;
+}
+.news .justify-row {
+    margin-bottom: 1rem;
+}
+.news h3 {
+    font-weight: 800;
+    /* margin-bottom: 20px; */
+    color: #000000cc;
+}
+.news .underline {
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 4px solid var(--primary-color);
+}
+.news p {
+    color: #000000cc;
+}
+.news p a {
+    color: var(--primary-color);
+}
+/* .news p:last-child {
+    margin-bottom: 40px;
+} */
+.news .view-details {
+    text-align: left;
+}
+
+.news .title,
+.review-products .title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    /* text-align: left; */
+    color: #000000cc;
+    border-bottom: 1px solid #e6eaf0;
+}
+
+.banner .row img {
+    width: 100%;
+    height: 100%;
+}
+.news .card-title {
+    font-size: 3rem;
+    font-weight: 800;
+
+    color: white;
+    text-align: center;
+    text-shadow: rgb(0 0 0 / 40%) 0px 1px 3px;
+    z-index: 20;
+    position: relative;
+    padding: 20px;
+}
+.banner .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    --bs-card-inner-border-radius: 0;
+    --bs-card-border-radius: 0;
+}
+.banner .card .btn-hover {
+    position: absolute;
+    background-color: #0000002b;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.banner .card:hover .btn-hover {
+    bottom: 0;
+    opacity: 1;
+}
+.banner .btn-hover .btn {
+    position: absolute;
+    bottom: 12%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.banner .card .btn-hover .btn:hover {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.banner button i,
+.news button i,
+.view-details button i {
+    margin-left: 8px;
+}
+.news .col-lg-6 i {
+    color: white !important;
+}
+/* .news .card:first-child {
+    margin-bottom: 32px;
+} */
+.banner button,
+.view-details button {
+    background-color: var(--primary-color);
+    padding: 8px 36px;
+    border-radius: 0;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+.banner button:hover,
+.view-details button:hover {
+    background-color: var(--secondary-color);
+    border: none;
+}
+.review-products {
+    margin-bottom: 60px;
+}
+.review-products .content-product {
+    margin-bottom: 16px;
+}
+
+.review-products .view-details button {
+    width: 100%;
+}
+@media (max-width: 991px) {
+    .nav-sub-news .tab-content .bottom div {
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    .nav-sub-news .tab-content .card-left {
+        padding-right: 0;
+        border-right: none;
+    }
+    .nav-sub-news .tab-content .card-right {
+        padding-left: 0;
+    }
+    .news {
+        margin-bottom: 40px;
+    }
+    .news .content {
+        padding: 20px 0 20px 0;
+    }
+    .news .card {
+        margin-bottom: 0;
+    }
+    .review-products .title {
+        margin-top: 0;
+    }
+    .top-nav-sub {
+        display: none;
+    }
+    .headline .icon-paddle {
+        display: none !important;
+    }
+}
+
+.sanphammoi #width3.booked-wzs-250-175 {
+    /* min-width: 100% !important; */
+    max-width: 100% !important;
+}

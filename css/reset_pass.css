@@ -1,0 +1,36 @@
+#user-num {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.p-text {
+    text-align: left !important;
+}
+
+.content-center {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+.num-input input {
+    margin: 0;
+}
+.num-input img {
+    width: 40%;
+    padding: 40px;
+}
+.top-head i {
+    padding-right: 20%;
+    position: absolute;
+    top: 30px;
+    left: 3%;
+    color: black;
+    /* transform: translate(-50%, 50%); */
+}
+@media (max-width: 991px) {
+    .content_verfocatoon {
+        width: 100%;
+    }
+    #user-num {
+        padding: 20px;
+    }
+}

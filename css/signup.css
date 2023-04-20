@@ -1,0 +1,65 @@
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+}
+.headline h2 {
+    font-weight: 900;
+}
+.note-signin {
+    background-color: var(--primary-color);
+    color: white;
+}
+.note-signin a {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+label {
+    color: black;
+}
+.send {
+    /* display: inline-block; */
+    border-radius: 0px;
+    color: #fff;
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+.send:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid transparent;
+}
+/* .btn-check:checked + .forget,
+.forget.active,
+.forget.show,
+.forget:first-child:active,
+:not(.forget-check) + .forget:active {
+    background-color: #e69019;
+    border-color: transparent !important;
+} */
+/* .btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+} */
+input,
+.form-select {
+    border-radius: 0px !important;
+    padding: 8px;
+    background-image: none !important;
+}
+
+@media (max-width: 767px) {
+    .send {
+        width: 100%;
+    }
+}

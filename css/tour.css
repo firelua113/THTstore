@@ -1,0 +1,195 @@
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+}
+.slide {
+    margin-bottom: 60px;
+}
+.review-products {
+    margin-bottom: 40px;
+}
+.review-products .content-product {
+    margin-bottom: 16px;
+}
+
+.review-products .view-details button {
+    width: 100%;
+}
+.review-products {
+    color: #000000cc;
+}
+.review-products .title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000000cc;
+    border-bottom: 0px solid #e6eaf0;
+}
+
+.tab-content .top {
+    border-bottom: 1px solid #e6eaf0;
+}
+.tab-content .card-left {
+    padding-left: 0;
+    padding-right: 40px;
+    border-right: 1px solid #e6eaf0;
+}
+.tab-content .card-right {
+    padding-left: 40px;
+}
+
+.tab-content a img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 20px; */
+}
+.tab-content .card-left a img {
+    margin-bottom: 32px;
+}
+.tab-content h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.tab-content p {
+    margin-bottom: 40px;
+}
+.tab-content .card-right div {
+    margin-bottom: 56px;
+}
+.tab-content h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.tab-content .bottom {
+    margin: 40px 40px 0 40px;
+}
+.tab-content .bottom div {
+    /* margin-bottom: 20px; */
+}
+.tab-content .view-details button {
+    width: 100%;
+}
+.tab-content .content-product {
+    color: #000000cc;
+    margin-bottom: 16px;
+}
+.tab-content-tour {
+    margin-bottom: 80px;
+}
+.new-product .fixed-box {
+    height: auto !important;
+}
+.star i {
+    color: orange;
+}
+.tab-content h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.tab-content .thumbnail:hover h3 {
+    color: #0b6eaa;
+}
+.carousel-indicators {
+    display: none;
+}
+@media (max-width: 991px) {
+    .prev-next {
+        display: none;
+    }
+    .new-product .title {
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 767px) {
+    .new-product .view-details button {
+        width: 100%;
+    }
+    .tab-content h3 span {
+        display: none;
+    }
+    .tab-content-tour {
+        margin-bottom: none;
+    }
+}
+.carousel-caption h2 {
+    color: white !important;
+}
+.animation-sup {
+    background-image: url("/img/river-120.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    position: relative;
+    background-position: 0 0;
+    animation: move 20s infinite alternate;
+    z-index: 6;
+    margin-top: 60px;
+}
+.animation-sup .img-icon-river {
+    width: 160px;
+    position: absolute;
+    top: 10%;
+    right: 0px;
+    transform: translate(50%, -75%);
+    animation: shock 20s infinite linear;
+}
+/* .container-content {
+    width: 100%;
+    height: 100px;
+} */
+@keyframes move {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: right 0;
+    }
+}
+@keyframes shock {
+    0% {
+        top: 30%;
+        right: -10%;
+    }
+    15% {
+        top: -10%;
+    }
+    30% {
+        top: 30%;
+    }
+    45% {
+        top: -10%;
+    }
+    60% {
+        top: 30%;
+    }
+    75% {
+        top: -10%;
+    }
+    90% {
+        top: 30%;
+    }
+    100% {
+        top: -10%;
+        right: 130%;
+    }
+}
+@media (max-width: 991px) {
+    .animation-sup {
+        display: none;
+    }
+}

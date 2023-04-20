@@ -1,0 +1,66 @@
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+}
+.content-body {
+    margin-bottom: 60px;
+}
+.left h1 {
+    font-size: 5rem !important;
+    font-weight: 900;
+}
+.left .caption {
+    color: rgba(0, 0, 0, 0.8);
+}
+.left .caption h4 {
+    font-weight: 800;
+}
+.left button {
+    padding: 0;
+    margin: 0;
+}
+.left button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    border-radius: 0px;
+    color: white;
+}
+.left button:hover {
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 0px;
+    color: white;
+}
+.left button:focus,
+.left button:active,
+.btn:focus-visible {
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 0px;
+    color: white;
+    border: 0px;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+    .left {
+        margin-bottom: 40px;
+    }
+}

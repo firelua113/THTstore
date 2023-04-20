@@ -1,0 +1,11 @@
+.content-center {
+    text-align: center;
+}
+.p-text {
+    text-align: center !important;
+}
+@media (max-width: 767px) {
+    .num-input img {
+        width: 100%;
+    }
+}

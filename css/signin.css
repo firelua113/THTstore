@@ -1,0 +1,9 @@
+:not(.btn-check) + .forget:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: transparent !important;
+}
+.fa-chevron-left {
+    font-size: 2rem;
+    color: black;
+}

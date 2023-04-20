@@ -1,0 +1,377 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; 
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+} */
+.vourcher {
+    background-color: rgba(0, 0, 0, 0.658);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    transition: 0.5s;
+}
+.vourcher.active {
+    display: none;
+}
+.vourcher .img {
+    /* text-align: center; */
+    margin: 48px 0;
+    tex
+}
+.vourcher .img img {
+    display: inline-block;
+
+    width: auto;
+}
+.vourcher i {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-caption {
+    position: absolute;
+    right: 50%;
+    bottom: 36%;
+    transform: translate(50%, 50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.banner h3 {
+    font-size: 3.4rem;
+    font-weight: 200;
+    margin-bottom: 32px;
+}
+.w-logo {
+    text-align: center;
+}
+.w-logo img {
+    width: 15%;
+    display: inline-block;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.banner button,
+.view-details button {
+    background-color: var(--primary-color);
+    padding: 8px 36px;
+    border-radius: 0;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+.banner button:hover,
+.view-details button:hover {
+    background-color: var(--secondary-color);
+    padding: 8px 36px;
+    border-radius: 0;
+    color: white;
+}
+
+.services .title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #000000cc;
+}
+
+.services .row img {
+    width: 100%;
+    height: 100%;
+}
+.services .card-title {
+    font-size: 3rem;
+    font-weight: 800;
+
+    color: white;
+    text-align: center;
+    text-shadow: rgb(0 0 0 / 40%) 0px 1px 3px;
+    z-index: 20;
+    position: relative;
+    padding: 20px;
+}
+.banner .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    --bs-card-inner-border-radius: 0;
+    --bs-card-border-radius: 0;
+}
+.banner .card .btn-hover {
+    position: absolute;
+    background-color: #0000002b;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.banner .card:hover .btn-hover {
+    bottom: 0;
+    opacity: 1;
+}
+.banner .btn-hover .btn {
+    position: absolute;
+    bottom: 12%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.banner .card .btn-hover .btn:hover {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+}
+
+.banner button i,
+.news button i,
+.view-details button i {
+    margin-left: 8px;
+}
+.news .col-lg-6 i {
+    color: white !important;
+}
+@media (max-width: 1200px) {
+    .services .title,
+    .new-product .title {
+        font-size: 3rem !important;
+    }
+}
+@media (max-width: 991px) {
+    .services .card-title {
+        padding: 80px 0 20px 0 !important;
+    }
+    .banner .card .btn-hover {
+        bottom: 0;
+        opacity: 1;
+    }
+    .news .content {
+        padding: 20px 0 0 0;
+    }
+    .news h3 {
+        margin-bottom: 0px;
+    }
+    /* .fixed-box {
+        height: 800px;
+    } */
+    .banner-sale .edit-caption {
+        bottom: 50% !important;
+    }
+    .headline .icon-paddle {
+        display: none;
+    }
+}
+.desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    margin-bottom: 20px;
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+/* 2 bang tin */
+.news {
+    margin-bottom: 60px;
+}
+.thumb img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+}
+.thumb-news {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.thumb-news-img {
+    transition: 0.5s;
+}
+.news img {
+    width: 100%;
+    height: 100%;
+    display: block !important;
+}
+.news img:hover {
+    transform: scale(1.2);
+}
+.news img:hover .thumb-news::before {
+    opacity: 1;
+}
+.news .card {
+    border: none;
+}
+.news .card:first-child {
+    margin-bottom: 32px;
+}
+.news .content {
+    padding: 20px 20px 40px 20px;
+}
+.news .col-lg-6 i {
+    color: red;
+    margin-right: 12px;
+}
+.news .text-danger {
+    font-weight: bolder;
+}
+.news .justify-row {
+    margin-bottom: 1rem;
+}
+.news h3 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #000000cc;
+}
+.news P {
+    color: #000000cc;
+}
+.news p:last-child {
+    margin-bottom: 40px;
+}
+.news .view-details {
+    text-align: left;
+}
+.banner-sale {
+    margin-bottom: 80px;
+    position: relative;
+}
+.banner-sale .edit-caption {
+    position: absolute;
+    bottom: 50%;
+    /* right: 25%; */
+    transform: translate(50%, 50%);
+    text-align: right;
+}
+
+.banner-sale .edit-caption h2 {
+    font-size: 7rem;
+    font-weight: 900;
+    color: #ff9400;
+    text-shadow: rgb(255, 255, 255) 0px 4px 0px;
+}
+.banner-sale .edit-caption h3 {
+    font-weight: 700;
+}
+.banner-sale button {
+    border: 2px solid white;
+    border-radius: 0;
+    color: white;
+    padding: 8px 36px;
+}
+.banner-sale button:hover {
+    background-color: var(--primary-color);
+    /* border: 2px solid var(--secondary-color); */
+    border: 2px solid transparent;
+}
+/* .fixed-box {
+    height: 400px;
+} */
+
+@media (max-width: 767px) {
+    .services .title,
+    .new-product .title {
+        font-size: 2rem !important;
+    }
+    .banner h3 {
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    .w-logo img {
+        width: 80px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .banner-sale .edit-caption {
+        bottom: 60% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    /* .fixed-box {
+        height: 1200px;
+    } */
+    .view-details {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .carousel-indicators {
+        margin-bottom: 4rem;
+    }
+    .prev-next {
+        /* visibility: hidden; */
+        display: none;
+    }
+    .desc {
+        margin-bottom: 48px;
+    }
+
+    .view-details button {
+        width: 100%;
+    }
+    .banner .edit-caption {
+        /* bottom: 76% !important; */
+        transform: translate(50%, 80%) !important;
+    }
+
+    .banner .edit-caption .w-logo {
+        display: none !important;
+    }
+    .banner-sale .edit-caption {
+        bottom: 40% !important;
+    }
+    .banner-sale .edit-caption h2 {
+        font-size: 3rem;
+    }
+
+    .services .title,
+    .new-product .title {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .banner-sale button:hover {
+        background-color: none;
+    }
+    .banner h3 {
+        font-size: 1.2rem;
+        font-weight: 200;
+        margin-bottom: 12px;
+    }
+
+    .w-logo img {
+        width: 15% !important;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}

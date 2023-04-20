@@ -1,0 +1,38 @@
+var date = new Date();
+$("#mdp-demo").multiDatesPicker({
+    // disable the 1st and 3rd of the current month
+    addDisabledDates: [
+        date.setDate(1),
+        date.setDate(2),
+        date.setDate(3),
+        date.setDate(4),
+        date.setDate(5),
+        date.setDate(6),
+        date.setDate(7),
+        date.setDate(8),
+        date.setDate(9),
+        date.setDate(10),
+        date.setDate(11),
+        date.setDate(12),
+        date.setDate(13),
+        date.setDate(14),
+        // date.setDate(15),
+        // date.setDate(16),
+        date.setDate(17),
+        date.setDate(18),
+        date.setDate(19),
+        date.setDate(20),
+
+        date.setDate(21),
+        // date.setDate(22),
+        // date.setDate(23),
+        date.setDate(24),
+        date.setDate(25),
+        date.setDate(26),
+        date.setDate(27),
+        date.setDate(28),
+        // date.setDate(29),
+        // date.setDate(30),
+        date.setDate(31),
+    ],
+});

@@ -1,0 +1,104 @@
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+}
+.send {
+    background-color: var(--primary-color) !important;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding: 8px 20px;
+}
+.send:hover {
+    background-color: var(--secondary-color) !important;
+    border: 1px solid transparent;
+}
+.modal-body .h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+.modal-content {
+    background-color: var(--primary-color);
+}
+.modal-header {
+    border-bottom: 0px;
+}
+.modal-header i {
+    color: rgba(255, 255, 255, 0.26) !important;
+    background-color: hsl(202 88% 28% / 1);
+
+    font-size: 1.2rem;
+    padding: 8px;
+    margin: 0;
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.modal-header:hover i {
+    background-color: var(--secondary-color);
+    color: white !important;
+}
+.modal-footer,
+.modal-body {
+    border-top: 0px;
+}
+.modal-body {
+    margin: 0 10%;
+}
+.modal-footer button {
+    color: white;
+    background-color: hsl(202 88% 28% / 1);
+
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 0px;
+    padding: 8px 20px;
+}
+.modal-footer:hover button {
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    background-color: var(--secondary-color);
+}
+.modal-footer:active button {
+    background-color: var(--secondary-color);
+}
+
+.modal-footer:visited button {
+    background-color: var(--secondary-color);
+}
+@media (max-width: 991px) {
+    .modal-body {
+        margin-top: 10%;
+    }
+    .modal-footer {
+        margin-bottom: 30%;
+    }
+    .modal-body .h2 {
+        text-align: center !important;
+        margin-bottom: 40px;
+    }
+    .modal-body img {
+        width: 70%;
+    }
+    .modal-body .row {
+        justify-content: center;
+    }
+}
+@media (max-width: 767px) {
+    .modal-footer {
+        margin-bottom: 40%;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal-body {
+        margin-top: 20%;
+    }
+
+    .modal-footer {
+        margin-bottom: 80%;
+    }
+}

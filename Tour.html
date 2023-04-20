@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tour</title>
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <!-- Global css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- local css -->
+        <link rel="stylesheet" href="css/news.css" />
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/home_2.css" />
+        <link rel="stylesheet" href="css/store.css" />
+        <link rel="stylesheet" href="css/tour.css" />
+        <link rel="stylesheet" href="css/news_sub.css" />
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".nav-sub-news" data-bs-offset="10">
+        <!-- nut search -->
+        <div class="search">
+            <form action="" class="d-flex">
+                <input type="text" placeholder="nhập từ khóa tìm kiếm" class="border-0" />
+                <a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+        </div>
+
+        <!-- bar menu top -->
+        <div class="top-nav">
+            <div class="container-fluid">
+                <div class="top-brand">THT Store welcome</div>
+
+                <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                    <div class="container d-flex">
+                        <a class="navbar-brand" href="home.html"><img src="img/logo/icon-blue@1x.png" alt="" /></a>
+
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                <li class="top-icon-hidden hidden">
+                                    <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                                    <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="news.html">Tin tức</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Hoạt động - sự kiện</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Kỹ năng - kỹ thuật</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Sản phẩm mới</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="news_sub.html">Thời tiết, thủy triều</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item nav-fd">
+                                    <a class="nav-link nav-fd" href="store.html">Cửa hàng</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Ván chèo</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Kayak - thuyền</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Mái chèo</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Phụ kiện</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="store_sub.html">Khác</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="source_sub.html">Khóa học</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp chèo cơ bản</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp SUP trên sông</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lớp Yoga - fitness </a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="source_sub_details.html">Lịch sự kiện sắp diễn ra</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="Rent.html">Cho thuê</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Sup bơm hơi</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Phụ kiện sup</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Cho thuê đồ cắm trại</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Rent_sub.html">Đặt hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="Tour.html">Tour</a>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour.html">Khu vực tphcm</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour.html">Tour trong nước</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour.html">Tour thế giới</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="Tour.html">Tour theo yêu cầu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-fd" href="about.html">Khám phá</a>
+
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Bảo mật thông tin</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                                        </li>
+                                        <li class="nav-item nav-sub">
+                                            <a class="nav-link" href="about.html">Thông tin tuyển dụng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="language hidden">
+                                    <a href="javascript:void(0)"><img src="img/icons/Vn.svg" alt="" /></a>
+                                    <a href="javascript:void(0)"><img src="img/icons/En.svg" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-icon m-1">
+                            <div class="container container-top">
+                                <div class="row">
+                                    <div class="col-3 col-md-3 col-lg-3"></div>
+                                    <div class="col-3 col-lg-3"></div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-bot">
+                                <div class="row">
+                                    <div class="col-3 col-lg-3">
+                                        <!-- javascript:; ngăn load lại trang web -->
+                                        <a href="javascript:;" class="clickSreach"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3">
+                                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="javascript:void(0)"><img src="img/icons/Vn.svg" alt="" /></a>
+                                    </div>
+                                    <div class="col-3 col-lg-3 reponsive-hidden">
+                                        <a href="javascript:void(0)"><img src="img/icons/En.svg" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- menu doc khi hover responsive-->
+            <div class="offcanvas offcanvas-end" id="demo">
+                <!-- <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Heading</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div> -->
+                <div class="offcanvas-body right-menu">
+                    <div class="top-icon-hidden">
+                        <a href="signin.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+                        <a href="user_info.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <a class="nav-link" href="news.html">Tin tức</a>
+                    <a class="nav-link" href="store.html">Cửa hàng</a>
+                    <a class="nav-link" href="source_sub.html">Khóa học</a>
+                    <a class="nav-link" href="Rent.html">Cho thuê</a>
+                    <a class="nav-link" href="Tour.html">Tour</a>
+                    <a class="nav-link" href="about.html">Khám phá</a>
+
+                    <div class="language">
+                        <a href=""><img src="img/icons/Vn.svg" alt="" /></a>
+                        <a href=""><img src="img/icons/En.svg" alt="" /></a>
+                    </div>
+                    <!-- <button class="btn btn-secondary" type="button">A Button</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- nav-sub-news -->
+        <div class="nav-sub-news container">
+            <h2 class="text-center title">Tour</h2>
+            <ul class="nav nav-pills justify-content-center" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">khu vực tphcm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">tour trong nước</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">tour thế giới</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Tour theo yêu cầu</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Carousel slide-banner -->
+        <div id="demo10" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo10" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo10" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo10" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/slide/img_1.png" alt="img_1" class="d-block" style="width: 100%" />
+
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row d-flex flex-nowrap">
+                                <div class="col-2 col-md-4 img d-flex align-items-center">
+                                    <img src="img/slide/dhyana_frontback 1.png" alt="" />
+                                </div>
+                                <div class="col-10 col-md-8 align-self-center flex-md-wrap ms-lg-4 carousel-block">
+                                    <h2>DHYANA FITNESS SERIES SIZES: 11'0"</h2>
+                                    <button type="button" class="btn btn-outline-secondary">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="img/slide/img_2.png" alt="img_2" class="d-block" style="width: 100%" />
+                    <div class="carousel-caption caption-more">
+                        <h2>ADVENTURE TOGETHER</h2>
+
+                        <button type="button" class="btn btn-outline-secondary">Mua ngay</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide/img_3.png" alt="img_3" class="d-block" style="width: 100%" />
+                    <div class="carousel-caption caption-more">
+                        <h2 class="shadhow">EXPLORE A WORLD WITH WONDER</h2>
+
+                        <button type="button" class="btn btn-outline-secondary">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev hidden-768" type="button" data-bs-target="#demo10" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon edit"></span>
+            </button>
+            <button class="carousel-control-next hidden-768" type="button" data-bs-target="#demo10" data-bs-slide="next">
+                <span class="carousel-control-next-icon edit"></span>
+            </button>
+        </div>
+
+        <!-- headline  PRODUCTS -->
+        <div class="review-products container mb-5">
+            <div class="headline">
+                <h3 class="title">Trải nghiệm một chuyến đi khó quên!</h3>
+                <p class="desc">Không bắt buộc kinh nghiệm, chỉ cần tận hưởng khám phá và thư giãn. Nơi khởi đầu những chuyến phiêu lưu mới.</p>
+            </div>
+        </div>
+
+        <!-- animation sup -->
+        <div class="animation-sup mb-5">
+            <div class="row">
+                <img src="img/paddle-user.png" alt="" class="img-icon-river" />
+            </div>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content ps-0 pe-0 tab-content-tour">
+            <div id="" class="container tab-pane ps-0 pe-0 active">
+                <div class="container ps-0 pe-0">
+                    <div class="row d-flex justify-content-between bottom">
+                        <div class="col-12 col-md-6 col-lg-6 pb-4">
+                            <div class="thumbnail">
+                                <a href="Tour_sub_details.html"> <h3>SUP/Kayak Tour (HB07) - Khám phá Vịnh Ngòi Hoa & Hồ Mắt Rồng</h3></a>
+                                <!-- <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour01.png" alt="" /></a> -->
+                                <div class="img card">
+                                    <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour01.png" alt="1" class="thumb-news-img" /></a>
+                                </div>
+                                <div class="content-product">
+                                    <div class="">
+                                        Địa điểm: Hòa Bình<br />
+                                        Ngày giờ khởi hành: hằng ngày<br />
+                                        Ngày giờ kết thúc: 12/12/2023<br />
+                                        Chi phí chuyến chèo: 1.000.000 đ<br />
+                                        Độ khó: 1/5<br />
+                                        Chương trình adventure outing nhẹ nhàng và hấp dẫn vào cuối tuần cho bất cứ ai gồm cả gia đình với trẻ nhỏ
+                                        hoặc các... 2<br />
+                                        <!-- 5 star -->
+                                        <div class="d-flex">
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star text-secondary"></i>
+                                            </div>
+                                            <div class="text-secondary text-black-50">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-details">
+                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 pb-4">
+                            <div class="thumbnail">
+                                <a href="Tour_sub_details.html">
+                                    <h3>
+                                        Tour chèo SUP mới của LEEP tại Go SUP
+                                        <span class="text-white"> mới của LEEP tại Go SUP</span>
+                                    </h3></a
+                                >
+                                <!-- <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour02.png" alt="" /></a> -->
+                                <div class="img card">
+                                    <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour02.png" alt="1" class="thumb-news-img" /></a>
+                                </div>
+                                <div class="content-product">
+                                    <div class="">
+                                        Địa điểm: Cầu Rạch Chiếc, số 19 Đường 400A, Phước Long A, TP. Thủ Đức, TP. HCM.<br />
+                                        Ngày giờ khởi hành: 7h<br />
+                                        Ngày giờ kết thúc: 18h<br />
+                                        Chi phí chuyến chèo: 700.000 đ<br />
+                                        Độ khó: 1/5<br />
+                                        ở một góc yên bình của Sài Gòn có những tour chèo SUP kết hợp nướng BBQ đỉnh hết ý luôn đó<br />
+
+                                        <!-- 5 star -->
+                                        <div class="d-flex">
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star text-secondary"></i>
+                                            </div>
+                                            <div class="text-secondary text-black-50">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-details">
+                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 pb-4">
+                            <div class="thumbnail">
+                                <a href="Tour_sub_details.html"> <h3>Saigon south marina club - 9A Trần Văn Trà, Tân Phong, Quận 7</h3></a>
+                                <!-- <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour03.png" alt="" /></a> -->
+                                <div class="img card">
+                                    <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour03.png" alt="1" class="thumb-news-img" /></a>
+                                </div>
+                                <div class="content-product">
+                                    <div class="">
+                                        Địa điểm: 9A Trần Văn Trà, Tân Phong, Quận 7, tp.HCM<br />
+                                        Ngày giờ khởi hành: 11/12/2022<br />
+                                        Ngày giờ kết thúc: 12/12/2022<br />
+                                        Chi phí chuyến chèo: 600.000 đ<br />
+                                        Độ khó: 1/5<br />
+                                        Ký ức và kỷ niệm... Bạn nhìn thấy gì sau những tấm ảnh bình dị này... Nó là cả một bầu trời thương nhớ để bạn
+                                        lưu lại.
+                                        <br />
+                                        <!-- 5 star -->
+                                        <div class="d-flex">
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="text-secondary text-black-50">740</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-details">
+                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 pb-4">
+                            <div class="thumbnail">
+                                <a href="Tour_sub_details.html"> <h3>SUP Tour (BB01) - Chinh phục Sông Năng và Hồ Ba Bể</h3></a>
+                                <!-- <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour04.png" alt="" /></a> -->
+                                <div class="img card">
+                                    <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour04.png" alt="1" class="thumb-news-img" /></a>
+                                </div>
+                                <div class="content-product">
+                                    <div class="">
+                                        Địa điểm: Ba Bể<br />
+                                        Ngày giờ khởi hành: 11/12/2022<br />
+                                        Ngày giờ kết thúc: 12/12/2022<br />
+                                        Chi phí chuyến chèo: 1.700.000 đ<br />
+                                        Độ khó: 1/5<br />
+                                        Ba Bể là một danh thắng đã nổi tiếng từ lâu vì vẻ đẹp thiên nhiên kỳ thú cả bốn mùa. Chuyến đi này sẽ đưa
+                                        các...<br />
+                                        <!-- 5 star -->
+                                        <div class="d-flex">
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star text-secondary"></i>
+                                            </div>
+                                            <div class="text-secondary text-black-50">38</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-details">
+                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 pb-4">
+                            <div class="thumbnail">
+                                <a href="Tour_sub_details.html"> <h3>SUP Tour (CB06) - Chinh phục rừng già Cát Bà và Vịnh Lan Hạ</h3></a>
+                                <!-- <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour05.png" alt="" /></a> -->
+                                <div class="img card">
+                                    <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour05.png" alt="1" class="thumb-news-img" /></a>
+                                </div>
+                                <div class="content-product">
+                                    <div class="">
+                                        Địa điểm: Cát Bà <br />
+                                        Ngày giờ khởi hành: 21/12/2022 <br />
+                                        Ngày giờ kết thúc: 28/12/2022 <br />
+                                        Chi phí chuyến chèo: 3.000.000 đ <br />
+                                        Độ khó: 1/5 <br />
+                                        Lịch trình kỳ thú nhất để khám phá trọn vẹn thế giới tự nhiên của Đảo Cát Bà. Trek xuyên rừng già, ngủ đêm
+                                        trong...
+                                        <br />
+                                        <!-- 5 star -->
+                                        <div class="d-flex">
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="text-secondary text-black-50">320</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-details">
+                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 pb-4">
+                            <div class="thumbnail">
+                                <a href="Tour_sub_details.html"> <h3>Saigon SUP Club - tận hưởng cảm giác mới lạ</h3></a>
+                                <!-- <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour06.png" alt="" /></a> -->
+                                <div class="img card">
+                                    <a href="Tour_sub_details.html"><img src="img/tour/Rectangle 570tour06.png" alt="1" class="thumb-news-img" /></a>
+                                </div>
+                                <div class="content-product">
+                                    <div class="">
+                                        Địa điểm: 480/89 Bình Quới, Phường 28, Quận Bình Thạnh, Ho Chi Minh City, Vietnam<br />
+                                        Ngày giờ khởi hành: 6h<br />
+                                        Ngày giờ kết thúc: 19h<br />
+                                        Chi phí chuyến chèo: 350.000 đ<br />
+                                        Độ khó: 1/5<br />
+                                        Với vị trí gần trung tâm tpHCM chỉ cần chèo 1 đoạn ngắn bạn sẽ ngắm được các tòa nhà cao ngút, cực đã hay ở 1
+                                        hướng khác ta sẽ vào rừng nước mặn ...<br />
+                                        <!-- 5 star -->
+                                        <div class="d-flex">
+                                            <div class="star pe-2">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star text-secondary"></i>
+                                            </div>
+                                            <div class="text-secondary text-black-50">1238</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-details">
+                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="container mt-3 list-num-page">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="javascript:;"><i class="fa-solid fa-angle-left ps-2 pe-2"></i></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="javascript:;">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:;">...</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:;">6</a></li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:;"> <i class="fa-solid fa-angle-right ps-2 pe-2"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- other thumbnails slide -->
+        <div class="new-product">
+            <div class="container">
+                <div class="headline">
+                    <h3 class="title">Khám phá những chuyến đi khác</h3>
+                </div>
+
+                <!-- Carousel -->
+                <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="prev-next">
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner fixed-box">
+                        <div class="carousel-item 1">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div id="home" class="container tab-pane active">
+                                    <div class="row list-nav-trip">
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="source_sub_details.html"
+                                                    ><img src="img/source/Rectangle 569source01.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="source_sub_details.html">
+                                                    <h5>Khoá huấn luyện & bồi dưỡng nghiệp vụ cứu hộ trong môi trường nước</h5></a
+                                                >
+                                                <!-- <div class="content-product">
+                                                    Sản phẩm Ván chèo đứng Aqua Marina RAPID 2018 là mẫu SUP cực kỳ cơ
+                                                    động &nbsp;
+                                                </div> -->
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="source_sub_details.html"
+                                                    ><img src="img/source/Rectangle 569source02.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="source_sub_details.html"> <h5>Khoá đào tạo SUP - Touring 1 ngày trên Sông Đà &nbsp;</h5></a>
+                                                <!-- <div class="content-product">
+                                                    Đây là review về Ván chèo đứng (SUP) JS giá rẻ của mình. Mình mua nó
+                                                    với giá 4.500.000đ.
+                                                </div> -->
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="source_sub_details.html"
+                                                    ><img src="img/source/Rectangle 569source03.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="source_sub_details.html">
+                                                    <h5>Khóa đào tạo SUP - Stand up paddle board căn bản Hồ Tây</h5></a
+                                                >
+                                                <!-- <div class="content-product">
+                                                    Aqua Marina Atlas là một ván chèo đứng bơm hơi vững chắc với một mức
+                                                    giá hợp lý.
+                                                </div> -->
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="source_sub_details.html"
+                                                    ><img src="img/source/Rectangle 569source04.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="source_sub_details.html">
+                                                    <h5>Khóa đào tạo SUP - Stand-up Paddle Board căn bản ở Hồ Đồng Đò</h5></a
+                                                >
+                                                <!-- <div class="content-product">
+                                                    Nếu bạn đang tìm kiếm một ván chèo bơm hơi SUP có giá phải chăng và
+                                                    sử dụng dòng All Around
+                                                </div> -->
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item 2">
+                            <div class="tab-content">
+                                <div id="home" class="container tab-pane active">
+                                    <div class="row list-nav-trip">
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re3.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Đánh giá ván chèo đứng bơm hơi (SUP) Aqua Marina Atlas</h5></a>
+                                                <div class="content-product">
+                                                    Aqua Marina Atlas là một ván chèo đứng bơm hơi vững chắc với một mức giá hợp lý.
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re4.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Review Ván chèo đứng (SUP) JS giá rẻ &nbsp;</h5></a>
+                                                <div class="content-product">
+                                                    Đây là review về Ván chèo đứng (SUP) JS giá rẻ của mình. Mình mua nó với giá 4.500.000đ.
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re1.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Đánh giá ván chèo đứng bơm hơi (SUP) Aqua Marina Triton</h5></a>
+                                                <div class="content-product">
+                                                    Nếu bạn đang tìm kiếm một ván chèo bơm hơi SUP có giá phải chăng và sử dụng dòng All Around
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re2.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Đánh giá nhanh về Ván chèo đứng Aqua Marina Rapid (2018)</h5></a>
+                                                <div class="content-product">
+                                                    Sản phẩm Ván chèo đứng Aqua Marina RAPID 2018 là mẫu SUP cực kỳ cơ động &nbsp;
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item 3 active">
+                            <div class="tab-content">
+                                <div id="home" class="container tab-pane active">
+                                    <div class="row list-nav-trip">
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re1.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Đánh giá ván chèo đứng bơm hơi (SUP) Aqua Marina Triton</h5></a>
+                                                <div class="content-product">
+                                                    Nếu bạn đang tìm kiếm một ván chèo bơm hơi SUP có giá phải chăng và sử dụng dòng All Around
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re2.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Đánh giá nhanh về Ván chèo đứng Aqua Marina Rapid (2018)</h5></a>
+                                                <div class="content-product">
+                                                    Sản phẩm Ván chèo đứng Aqua Marina RAPID 2018 là mẫu SUP cực kỳ cơ động &nbsp;
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re3.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Đánh giá ván chèo đứng bơm hơi (SUP) Aqua Marina Atlas</h5></a>
+                                                <div class="content-product">
+                                                    Aqua Marina Atlas là một ván chèo đứng bơm hơi vững chắc với một mức giá hợp lý.
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 thumbnail">
+                                            <div class="img card">
+                                                <a href="news_sub_details.html"
+                                                    ><img src="img/news/Rectangle 557re4.png" alt="1" class="thumb-news-img"
+                                                /></a>
+                                            </div>
+                                            <div>
+                                                <a href="news_sub_details.html"> <h5>Review Ván chèo đứng (SUP) JS giá rẻ &nbsp;</h5></a>
+                                                <div class="content-product">
+                                                    Đây là review về Ván chèo đứng (SUP) JS giá rẻ của mình. Mình mua nó với giá 4.500.000đ.
+                                                </div>
+                                                <div class="view-details">
+                                                    <button class="btn btn-primary" type="button">Xem thêm</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-details">
+                        <button class="btn btn-primary" type="button">Tham gia cùng chúng tôi<i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- quality -->
+        <div class="quality" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-6"><img src="img/icons/100_.svg" alt="" /></div>
+                        <!-- <h2>100%</h2> -->
+                        <h4 class="col-lg-6 align-self-center">Cam kết chính hãng</h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-6"><img src="img/icons/delivery.svg" alt="" /></div>
+                        <h4 class="col-lg-6 align-self-center">Giao hàng toàn quốc</h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-4 img4"><img src="img/icons/pakage.svg" alt="" /></div>
+                        <h4 class="col-md-3 col-lg-8 align-self-center">
+                            Đổi trả<br />
+                            trong 7 ngày
+                        </h4>
+                    </div>
+                    <div class="sub col-12 col-md-3 d-flex">
+                        <div class="img col-lg-4 img4"><img src="img/icons/money.svg" alt="" /></div>
+                        <h4 class="col-lg-8 align-self-center">
+                            Giá tốt <br />
+                            nhất cho bạn
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer mt-5 pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Về THT Store</h3>
+                            <ul class="info">
+                                <li><a href="error.html">Điều khoản và điều kiện </a></li>
+                                <li><a href="error.html">Bảo mật thông tin </a></li>
+                                <li><a href="error.html">Chính sách ưu đãi</a></li>
+                                <li class="mb-4"><a href="error.html">Thông tin tuyển dụng </a></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="img/icons/dmca.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Hỗ trợ khách hàng</h3>
+                            <ul class="info">
+                                <li><a href="contact.html">Đặt hàng</a></li>
+                                <li><a href="contact.html">Đổi và trả hàng </a></li>
+                                <li><a href="contact.html">Chính sách giao và nhận</a></li>
+                                <li class=""><a href="contact.html">Chính sách thanh toán</a></li>
+                                <li><a href="contact.html">Chính sách bảo hành</a></li>
+                                <li><a href="contact.html">Gia công hàng hóa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-4 mt-xs-4">Góc tư vấn</h3>
+                            <ul class="info">
+                                <li><a href="contact.html">Liên kết với THTStore</a></li>
+                                <li><a href="contact.html">Q &amp; A </a></li>
+                                <li><a href="contact.html">Khám phá điểm du lịch</a></li>
+                                <li><a href="contact.html">Khám phá khóa học</a></li>
+                                <li><a href="contact.html">Khám phá kỹ năng</a></li>
+                                <li class="mb-4 jus-img">
+                                    <a href="javascript:void(0)"><img src="img/icons/visa.png" alt="" /></a>
+                                    <a href="javascript:void(0)">
+                                        <img src="img/icons/amex-2.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)"> <img src="img/icons/master-card-1.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="ft-list">
+                            <h3 class="title mb-3 mt-xs-4">Nơi đăng ký nhận bản tin khuyến mãi</h3>
+                            <p class="desc mb-2">
+                                Đăng ký bản tin của chúng tôi để được thông báo về những nơi nghỉ ngơi và lớp học yoga sắp tới của SUP.
+                            </p>
+
+                            <form action="error.html">
+                                <div class="mb-3 mt-3 resp575">
+                                    <label class="pb-2" for="lastname">Họ: </label>
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                        id="lname"
+                                        placeholder="nhập họ"
+                                        name="lname"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="firstname">Tên:</label>
+                                    <input
+                                        type="text"
+                                        class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                        id="fname"
+                                        placeholder="nhập tên"
+                                        name="fname"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email">Email:</label>
+                                    <div class="d-flex">
+                                        <input
+                                            type="email"
+                                            class="form-control border-0 border-bottom rounded-0 me-2 p-0"
+                                            id="email"
+                                            placeholder="nhập email"
+                                            name="email"
+                                        />
+
+                                        <button type="submit" class="btn border-bottom border-white rounded-0">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-4">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember" /> Lưu thông tin
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 img p-2">
+                        <a href="index.html"><img src="img/logo/icon-blue@1.5x.png" alt="" /></a>
+                    </div>
+                    <div class="col-lg-8 text-center d-flex align-items-center info-des">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">Trang web của chúng tôi được lưu trữ trên dịch vụ lưu trữ có trách nhiệm với môi trường</div>
+                                <p></p>
+                                <div class="col-lg-12">© 2022 <span>THT Store</span> bởi <span>ththong_desweb@gmail.com</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-flex jus align-items-center justify-content-end img p-2">
+                        <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- button roll top -->
+        <div class="backtop" onclick="scrolltop() ">
+            <!-- <i class="fa-solid fa-arrow-up-long"></i> -->
+            <img src="img/icons/icon scroll back top.png" alt="scroll-back" />
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <!-- jquery -->
+        <script src="js/style.js"></script>
+        <script src="js/news.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

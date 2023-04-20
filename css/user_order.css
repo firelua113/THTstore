@@ -1,0 +1,147 @@
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    /* background-color: #f2f2f6; */
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+}
+.content-body {
+    color: black;
+}
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.info-right .nav-pills .nav-link {
+    padding: 12px 20px;
+}
+
+.info-right .nav-pills .nav-link.active {
+    border-radius: 0px;
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.info-right a:hover {
+    border-radius: 0px;
+    color: var(--secondary-color);
+}
+.head-text {
+    padding-bottom: 32px;
+
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e6eaf0;
+}
+.head-text div {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.total div {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.body-text .img {
+    display: flex;
+    justify-content: center;
+}
+
+.body-text img {
+    width: 50%;
+}
+.body-text .num-count {
+    margin-top: 12px;
+}
+.body-text .num-count span {
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.body-text-btn button {
+    display: inline-block;
+    border-radius: 0px;
+    color: #fff;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+.body-text-btn button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.body-text-btn button:last-child {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0px;
+    padding: 12px 20px;
+    /* display: flex; */
+}
+.body-text-btn button:last-child:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid transparent;
+}
+.onoff {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    .tab-right .title {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 16px 0 8px 12px;
+        margin-bottom: 12px;
+    }
+    .avt-left {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    }
+    .tab-left .title {
+        background-color: white;
+        color: black;
+        padding: 16px 0 8px 12px;
+    }
+    .tab-left .title:first-child {
+        display: none;
+    }
+    .tab-left-sub {
+        display: none;
+    }
+    .t7 button {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+    .form-select {
+        width: 100% !important;
+    }
+    .onoff {
+        display: block !important;
+    }
+    .head-text {
+        display: none;
+    }
+    .body-text {
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        padding: 12px 0;
+    }
+    .icon {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+        padding-bottom: 12px;
+    }
+    .text-center {
+        text-align: left !important;
+    }
+    .total {
+        border-left: 2px solid rgba(0, 0, 0, 0.15);
+        border-right: 2px solid rgba(0, 0, 0, 0.15);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    }
+    .btn-confirm .btn {
+        width: 100%;
+    }
+}

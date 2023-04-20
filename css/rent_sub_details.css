@@ -1,0 +1,10 @@
+.rent-from-to-date,
+.day-show {
+    display: none !important;
+}
+.active {
+    display: block !important;
+}
+.hidden {
+    display: none;
+}

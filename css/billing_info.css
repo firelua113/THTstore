@@ -1,0 +1,69 @@
+body {
+    font-family: "Mulish", sans-serif;
+    --primary-color: #0b6eaa;
+    --secondary-color: #e69019;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+img {
+    width: auto;
+}
+.form-select {
+    width: 100% !important;
+    /* height: 40px !important; */
+}
+
+.select-city label {
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+select {
+    position: relative;
+}
+option {
+    position: absolute;
+    top: 0;
+}
+h4,
+.h4 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: black !important;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0px !important;
+    padding: 8px;
+}
+.hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+td {
+    width: 50%;
+}
+
+.payment-method {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.payment-method .form-check {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+.payment-method-box {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+    color: var(--primary-color);
+}
+.form-check-input.is-valid:checked,
+.was-validated .form-check-input:valid:checked {
+    background-color: var(--primary-color);
+}
