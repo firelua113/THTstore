@@ -68,9 +68,15 @@ body {
     background-color: var(--primary-color);
     transition: 0.5s;
 }
+.body-text-btn button a {
+    color: white;
+}
 .body-text-btn button:hover {
     background-color: var(--secondary-color);
     color: white;
+}
+.body-text-btn button:hover a {
+    color: white !important;
 }
 .body-text-btn button:last-child {
     background-color: white;
@@ -80,10 +86,16 @@ body {
     padding: 12px 20px;
     /* display: flex; */
 }
+.body-text-btn button:last-child a {
+    color: var(--primary-color);
+}
 .body-text-btn button:last-child:hover {
     background-color: var(--secondary-color);
     color: white;
     border: 1px solid transparent;
+}
+.body-text-btn button:last-child:hover a {
+    color: white;
 }
 .onoff {
     display: none !important;
