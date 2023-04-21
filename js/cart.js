@@ -17,6 +17,18 @@ function convertNumber(str) {
 }
 
 $(function () {
+    $(".btn-update").click(function () {
+        $(".border-top .num-zero").addClass("hidden");
+        $(".border-top .num-feeship").removeClass("hidden");
+        $(".border-top .num-feeship").addClass("active");
+
+        $(".result-final-nofee").addClass("hidden");
+        $(".result-final").removeClass("hidden");
+        $(".result-final").addClass("active");
+    });
+});
+
+$(function () {
     $(".signal").click(function () {
         // lấy thuộc tính type gán vào biến $type
         $type = $(this).attr("type");
@@ -28,6 +40,8 @@ $(function () {
 
         $total = convertNumber($(".result-price-total span").text());
         $sum = convertNumber($(this).closest(".box-math").find(".result-sum span").text());
+
+        $finalNofee = convertNumber($(".result-final-nofee span").text());
 
         $final = convertNumber($(".result-final span").text());
 
@@ -56,6 +70,7 @@ $(function () {
             // console.log($total);
 
             $final = $total + parseInt($priceship);
+            // $final = 16000 + parseInt($finalNofee);
             // console.log($final);
         }
         // chạy xong điều kiện trả về giá trị từ biến $quantity giá trị mới
@@ -63,6 +78,8 @@ $(function () {
         $(this).closest(".box-math").find(".result-sum span").text(convertMoney($sum));
 
         $(".result-price-total span").text(convertMoney($total));
+        $(".result-final-nofee span").text(convertMoney($total));
+
         $(".result-final span").text(convertMoney($final));
     });
 

@@ -106,12 +106,18 @@ form.collapse-ship {
     display: none;
 }
 #collapse-ship {
-    color: #0b6eaa;
+    color: #0b6eaa !important;
 }
 .onoff {
     display: none;
 }
 .border-top .onoff {
+    display: block !important;
+}
+.hidden {
+    display: none;
+}
+.active {
     display: block !important;
 }
 @media (max-width: 991px) {
