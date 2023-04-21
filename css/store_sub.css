@@ -31,7 +31,7 @@ img {
 }
 .content_store .btn {
     background-color: var(--primary-color);
-    padding: 4px 20px;
+    padding: 10px 20px;
     margin-right: 20px;
     color: white;
     border-radius: 0;

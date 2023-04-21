@@ -122,9 +122,11 @@ body {
 }
 .headline .icon-paddle {
     position: absolute;
-    left: 45%;
+    display: block !important;
+    left: 95%;
     transform: rotate(-45deg);
     top: 0%;
+    width: auto;
     height: 80px;
     animation: rotatePaddle 1.5s linear 2s infinite alternate;
 }

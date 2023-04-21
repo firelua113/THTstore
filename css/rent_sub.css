@@ -11,7 +11,7 @@ img {
     display: block;
 }
 .animation-sup {
-    background-image: url("/img/river-120.png");
+    background-image: url("../img/river-120.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
@@ -26,7 +26,7 @@ img {
     top: 10%;
     right: 0px;
     transform: translate(50%, -75%);
-    animation: shock 20s infinite linear;
+    animation: shock 20s forwards linear;
 }
 /* .container-content {
     width: 100%;

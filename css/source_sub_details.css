@@ -9,10 +9,7 @@ body {
 .title-cart {
     margin-bottom: 40px;
 }
-.p-product-1 .p_left .p_thumb {
-    position: relative;
-    padding: 20px;
-}
+
 .ui-widget.ui-widget-content {
     border: 1px solid var(--primary-color);
     width: 100%;
