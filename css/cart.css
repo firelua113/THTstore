@@ -10,6 +10,10 @@ body {
 img {
     width: 100;
 }
+/* .container-top .row a,
+.container-bot .row a {
+    color: black !important;
+} */
 .row a {
     color: black !important;
 }
@@ -68,7 +72,9 @@ a {
 .full-width {
     width: 100%;
 }
-
+.full-width a {
+    color: white !important;
+}
 .box-math .subbox {
     display: flex;
     align-items: center;

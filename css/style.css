@@ -131,9 +131,9 @@ body {
         color: white;
         padding-top: 60px;
     }
-    .container-top {
-        /* margin-bottom: 20px; */
-    }
+    /* .container-top {
+        margin-bottom: 20px;
+    } */
     .right-menu a {
         margin: 20px 8px 10px 0px;
     }
@@ -221,9 +221,9 @@ body {
     width: auto;
     height: 100%;
 }
-.sub-footer .info-des div {
-    /* display: block; */
-}
+/* .sub-footer .info-des div {
+    display: block;
+} */
 .sub-footer .img a i {
     padding: 12px;
     color: rgba(255, 255, 255, 0.65);

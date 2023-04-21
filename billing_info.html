@@ -275,14 +275,14 @@
                         <div class="row">
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Họ:*</label>
-                                <input type="text" class="form-control" id="lname" placeholder="Nhập họ" name="lname" required />
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <input type="text" class="form-control" id="lname" placeholder="Nhập họ" name="lname" />
+                                <!-- <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div> -->
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Tên:* </label>
                                 <input type="text" class="form-control" id="fname" placeholder="Nhập tên" name="fname" required />
                                 <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <!-- <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div> -->
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Thành phố:*</label>
@@ -344,15 +344,15 @@
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Số điện thoại :</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Nhập username" name="uname" required />
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <input type="text" class="form-control" id="uname" placeholder="Nhập số điện thoại" name="uname" required />
+                                <div class="valid-feedback">Vui lòng nhập 10 chữ số</div>
+                                <div class="invalid-feedback">Vui lòng nhập Số điện thoại liên lạc</div>
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Email :</label>
                                 <input type="email" class="form-control" id="uname" placeholder="Nhập email" name="uname" />
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <!-- <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div> -->
                             </div>
 
                             <!-- <div class="mb-3 col-lg-6">
@@ -403,7 +403,7 @@
                             <label class="mb-2">Ghi chú đơn hàng (không bắt buộc)</label>
 
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                                <textarea class="form-control" id="comment" name="text" placeholder="Chi tiết đơn hàng"></textarea>
                                 <label for="comment" class="text-black-50">Comments</label>
                             </div>
                         </div>
@@ -411,14 +411,14 @@
                         <div class="row row-4 collapse" id="other-address">
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Họ:*</label>
-                                <input type="text" class="form-control" id="lname" placeholder="Nhập họ" name="lname" required />
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <input type="text" class="form-control" id="lname" placeholder="Nhập họ" name="lname" />
+                                <!-- <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div> -->
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Tên:* </label>
                                 <input type="text" class="form-control" id="fname" placeholder="Nhập tên" name="fname" required />
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <!-- <div class="valid-feedback">Valid.</div> -->
+                                <!-- <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div> -->
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Thành phố:*</label>
@@ -480,16 +480,16 @@
                             </div>
                             <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Số điện thoại :</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Nhập username" name="uname" required />
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
+                                <input type="text" class="form-control" id="uname" placeholder="Nhập số điện thoại" name="uname" required />
+                                <div class="valid-feedback">Vui lòng nhập 10 chữ số</div>
+                                <div class="invalid-feedback">Vui lòng nhập Số điện thoại liên lạc</div>
                             </div>
-                            <div class="mb-3 col-lg-6">
+                            <!-- <div class="mb-3 col-lg-6">
                                 <label for="uname" class="form-label">Email :</label>
                                 <input type="email" class="form-control" id="uname" placeholder="Nhập email" name="uname" />
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Vui lòng nhập đầy đủ thông tin</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -522,84 +522,119 @@
             <div class="payment-method pt-2 pb-2">
                 <!-- table -->
                 <div class="container mt-3" id="accordion">
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input ms-2" id="radio1" name="optradio" value="option1" checked />
-                        <label class="form-check-label ms-2" for="radio1"
-                            >Thanh toán khi giao hàng. Vui lòng liên hệ với chúng tôi nếu bạn cần hỗ trợ hoặc muốn thu xếp thay thế.</label
-                        >
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input ms-2" id="radio2" name="optradio" value="option2" />
-                        <label class="form-check-label ms-2" for="radio2">Thanh toán bằng Momo</label>
-                    </div>
-                    <div class="form-check">
-                        <input
-                            type="radio"
-                            class="form-check-input ms-2"
-                            id="radio3"
-                            name="optradio"
-                            value="option3"
-                            data-bs-toggle="collapse"
-                            href="#show-3"
-                        />
-                        <label class="form-check-label ms-2" for="radio3">Thẻ tín dụng</label>
-                    </div>
-                </div>
-
-                <div class="container pb-3">
-                    <div class="mb-3 p-3 d-flex">
-                        <div><img src="img/icons/visa.png" alt="" /></div>
-                        <div><img src="img/icons/amex-2.png" alt="" /></div>
-                        <div><img src="img/icons/master-card-1.png" alt="" /></div>
-                    </div>
-                    <form action="/action_page.php" id="show-3" data-bs-parent="#accordion" class="container p-3 payment-method-box collapse">
-                        <div class="row">
-                            <div class="mb-3">
-                                <label for="uname" class="form-label">Trả tiền một cách an toàn bằng thẻ tín dụng của bạn. </label>
-                            </div>
-
-                            <div class="resp575">
-                                <label class="pb-2" for="lastname">Số thẻ * </label>
-                                <input
-                                    type="text"
-                                    class="form-control border-0 border-bottom rounded-0 me-2"
-                                    id="lname"
-                                    placeholder="**** ***** *****"
-                                    name="lname"
-                                    required
-                                />
-                            </div>
-
-                            <div class="mb-3 row">
-                                <div class="mb-3 mt-3 col-lg-6">
-                                    <label class="pb-2" for="lastname">Hết hạn (MM / YY) * </label>
-                                    <input
-                                        type="text"
-                                        class="form-control border-0 border-bottom rounded-0 me-2"
-                                        id="lname"
-                                        placeholder="MM / YY"
-                                        name="lname"
-                                        required
-                                    />
-                                </div>
-                                <div class="mb-3 mt-3 col-lg-6">
-                                    <label class="pb-2" for="lastname">Mã bảo mật thẻ *</label>
-                                    <input
-                                        type="text"
-                                        class="form-control border-0 border-bottom rounded-0 me-2"
-                                        id="lname"
-                                        placeholder="CSC"
-                                        name="lname"
-                                        required
-                                    />
-                                </div>
-                            </div>
-
-                            <!-- <div class="col-lg-6 form-check d-flex mb-3"></div> -->
+                    <div class="card">
+                        <div class="form-check check-style-bill">
+                            <input
+                                type="radio"
+                                class="form-check-input ms-2"
+                                id="radio1"
+                                name="optradio"
+                                value="option1"
+                                data-bs-toggle="collapse"
+                                href="#collapseOne"
+                                checked
+                            />
+                            <label class="form-check-label ms-2" for="radio1"
+                                >Thanh toán khi giao hàng. Vui lòng liên hệ với chúng tôi nếu bạn cần hỗ trợ hoặc muốn thu xếp thay thế.</label
+                            >
                         </div>
-                    </form>
+                        <div id="collapseOne" data-bs-parent="#accordion" class="container p-3 payment-method-box collapse"></div>
+                    </div>
 
-                    <!-- <div class="card id="radio-2">
+                    <div class="card">
+                        <div class="form-check check-style-bill">
+                            <input
+                                type="radio"
+                                class="form-check-input ms-2"
+                                id="radio2"
+                                name="optradio"
+                                value="option2"
+                                data-bs-toggle="collapse"
+                                href="#collapseTwo"
+                            />
+                            <label class="form-check-label ms-2" for="radio2">Thanh toán bằng Momo</label>
+                        </div>
+                        <div id="collapseTwo" data-bs-parent="#accordion" class="container p-3 payment-method-box collapse">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center mb-3"><img src="img/QR_Code2_TTH 1.png" alt="QR momo" /></div>
+                                <p class="col-12 text-center">Quét mã thanh toán qua Momo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="form-check check-style-bill">
+                            <input
+                                type="radio"
+                                class="form-check-input ms-2"
+                                id="radio3"
+                                name="optradio"
+                                value="option3"
+                                data-bs-toggle="collapse"
+                                href="#show-3"
+                            />
+                            <label class="form-check-label ms-2" for="radio3">Thẻ tín dụng</label>
+                        </div>
+
+                        <div class="container pb-3">
+                            <div class="mb-3 p-3 d-flex">
+                                <div><img src="img/icons/visa.png" alt="" /></div>
+                                <div class="ms-2"><img src="img/icons/amex-2.png" alt="" /></div>
+                                <div class="ms-2"><img src="img/icons/master-card-1.png" alt="" /></div>
+                            </div>
+
+                            <div id="show-3" data-bs-parent="#accordion" class="container p-3 payment-method-box collapse">
+                                <!-- <div class="row">
+                                    <div class="col-12 d-flex justify-content-center mb-3"><img src="img/QR_Code2_TTH 1.png" alt="QR momo" /></div>
+                                    <p class="col-12 text-center">Quét mã thanh toán qua Momo</p>
+                                </div> -->
+                                <div class="row">
+                                    <div class="mb-3">
+                                        <label for="uname" class="form-label">Trả tiền một cách an toàn bằng thẻ tín dụng của bạn. </label>
+                                    </div>
+
+                                    <div class="resp575">
+                                        <label class="pb-2" for="lastname">Số thẻ * </label>
+                                        <input
+                                            type="text"
+                                            class="form-control border-0 border-bottom rounded-0 me-2"
+                                            id="lname"
+                                            placeholder="**** ***** *****"
+                                            name="lname"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div class="mb-3 row">
+                                        <div class="mb-3 mt-3 col-lg-6">
+                                            <label class="pb-2" for="lastname">Hết hạn (MM / YY) * </label>
+                                            <input
+                                                type="text"
+                                                class="form-control border-0 border-bottom rounded-0 me-2"
+                                                id="lname"
+                                                placeholder="MM / YY"
+                                                name="lname"
+                                                required
+                                            />
+                                        </div>
+                                        <div class="mb-3 mt-3 col-lg-6">
+                                            <label class="pb-2" for="lastname">Mã bảo mật thẻ *</label>
+                                            <input
+                                                type="text"
+                                                class="form-control border-0 border-bottom rounded-0 me-2"
+                                                id="lname"
+                                                placeholder="CSC"
+                                                name="lname"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="col-lg-6 form-check d-flex mb-3"></div> -->
+                                </div>
+                            </div>
+
+                            <!-- <div class="card id="radio-2">
                             <div class="card-header">
                                 <a class="btn" data-bs-toggle="collapse" href="#collapseOne"> Collapsible Group Item #1 </a>
                             </div>
@@ -607,6 +642,8 @@
                                 <div class="card-body">aaaaaaaaaaaaaaaaaaa</div>
                             </div>
                         </div> -->
+                        </div>
+                    </div>
 
                     <div class="mb-3 mt-3 col-12 text-end">
                         <button type="button" class="btn btn-primary send" data-bs-toggle="modal" data-bs-target="#myModal">Xác nhận</button>

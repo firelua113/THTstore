@@ -1,7 +1,7 @@
 $(function () {
     $("#check1").click(function () {
-        $(".calendar").addClass("active");
-        $(".personal-tour").addClass("active");
-        $(".setup-tour").addClass("hidden");
+        $(".calendar").toggleClass("active");
+        $(".personal-tour").toggleClass("active");
+        $(".setup-tour").toggleClass("hidden");
     });
 });

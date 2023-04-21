@@ -220,40 +220,42 @@ img {
 p {
     margin-bottom: 0;
 }
-.p-product-1 .p_button:first-child {
+.p-product-1 .btn-primary {
     /* width: 90% !important; */
     margin-right: 12px;
     display: block !important;
     border-radius: 0px;
 }
-.p-product-1 .p_button:hover:first-child {
+.p-product-1 .btn-primary:hover {
     background-color: var(--secondary-color);
 }
-.p-product-1 .p_button:last-child {
+.p-product-1 .btn-secondary {
     background-color: white;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 0px;
     padding: 12px 20px;
     display: flex;
+    justify-content: center;
+    align-self: center;
 }
-.p-product-1 .p_button:hover:last-child {
+.p-product-1 .btn-secondary:hover {
     background-color: var(--secondary-color);
     color: white;
     border: 1px solid transparent;
 }
-.p-product-1 .p_button:last-child div {
+.p-product-1 .btn-secondary div {
     margin-right: 12px;
 }
-.p-product-1 .p_button:last-child i {
+.p-product-1 .btn-secondary i {
     align-self: center;
     /* font-size: 2.4em;
     display: block;
     padding-bottom: 6px; */
 }
-.p-product-1 .p_button:hover {
+/* .p-product-1 .p_button:hover {
     background-color: rgb(37, 37, 37);
-}
+} */
 .p-product-1 .sale_text {
     margin-bottom: 30px;
     margin-top: 30px;

@@ -51,9 +51,17 @@ td {
 .payment-method {
     background-color: rgba(0, 0, 0, 0.05);
 }
+.payment-method .card {
+    border-radius: 0px;
+}
+.form-floating .form-control {
+    background-image: none !important;
+    min-height: 100px;
+}
+
 .payment-method .form-check {
     padding: 16px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important; */
 }
 .payment-method-box {
     background-color: rgba(0, 0, 0, 0.05);
@@ -66,4 +74,7 @@ td {
 .form-check-input.is-valid:checked,
 .was-validated .form-check-input:valid:checked {
     background-color: var(--primary-color);
+}
+.form-check-input[type="radio"] {
+    border-radius: 50% !important;
 }
