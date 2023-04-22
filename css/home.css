@@ -65,10 +65,6 @@ body {
     z-index: 500;
 }
 
-.slideshow {
-    display: block;
-}
-
 .banner h3 {
     font-size: 3.4rem;
     font-weight: 200;
